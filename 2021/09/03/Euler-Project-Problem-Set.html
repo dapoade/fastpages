@@ -77,7 +77,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -119,7 +119,8 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="By:-Dapo-Adegbile"><strong>By: Dapo Adegbile</strong><a class="anchor-link" href="#By:-Dapo-Adegbile"> </a></h4>
+<p><strong>By: Dapo Adegbile</strong></p>
+
 </div>
 </div>
 </div>
@@ -132,13 +133,24 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Find-the-difference-between-the-sum-of-the-squares-of-the-first-one-hundred-natural-numbers-and-the-square-of-the-sum.">Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.<a class="anchor-link" href="#Find-the-difference-between-the-sum-of-the-squares-of-the-first-one-hundred-natural-numbers-and-the-square-of-the-sum."> </a></h4>
+<p>The sum of the squares of the first ten natural numbers is,
+$$
+1^{2}+2^{2}+\ldots+10^{2}=385
+$$</p>
+<p>The square of the sum of the first ten natural numbers is,
+$$
+(1+2+\ldots+10)^{2}=55^{2}=3025
+$$</p>
+<p>Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is $3025-385=2640$</p>
+<p><strong>Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.</strong></p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>My approach for this problem was to first generate a list of numbers from 1-100 so I can perform the necessary calculation on each number in the list. Once generated, to find the sum of the squares, I squared each number in the list and then added them together. Next, to get the square of the sum, I added all of the numbers in the original list, and then squared the sum. Lastly I took the difference between the sum of the squares and the square of the sum and arrived at 25164150 for my solution.</p>
+
+<pre><code>My approach for this problem was to first generate a list of numbers from 1-100 so I can perform the necessary calculation on each number in the list. Once generated, to find the sum of the squares, I squared each number in the list and then added them together. Next, to get the square of the sum, I added all of the numbers in the original list, and then squared the sum. Lastly I took the difference between the sum of the squares and the square of the sum and arrived at 25164150 for my solution.</code></pre>
 
 </div>
 </div>
@@ -180,9 +192,7 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
-        <p><div class="input">
+<div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
@@ -192,8 +202,9 @@ window.onload = wrap_img;
     </div>
 </div>
 </div>
-</p>
-    </details>
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
+        <p>
 <div class="output_wrapper">
 <div class="output">
 
@@ -209,7 +220,8 @@ window.onload = wrap_img;
 
 </div>
 </div>
-
+</p>
+    </details>
 </div>
     
 
@@ -222,14 +234,18 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For this problem my first instict was to create a list of of all the natural numbers that are palindromic in base 10.  Once created, I looped through said list to check if they are palindromic in base 2. If the number is palindromic in base 2, I added it to a dictionary with the key being the base 2 number, and the value being the base 10 number. Once the dictionary is completed I added all of the values (base 10 numbers) and got the sum of the numbers that are palindromic in base 10 and base 2.</p>
+<p>The decimal number, $585=1001001001_{2}$ (binary), is palindromic in both bases.
+Find the sum of all numbers, less than one million, which are palindromic in base 10 and base $2 .$
+(Please note that the palindromic number, in either base, may not include leading zeros.)</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Find-the-sum-of-all-numbers,-less-than-one-million,-which-are-palindromic-in-base-10-and-base-2.">Find the sum of all numbers, less than one million, which are palindromic in base 10 and base 2.<a class="anchor-link" href="#Find-the-sum-of-all-numbers,-less-than-one-million,-which-are-palindromic-in-base-10-and-base-2."> </a></h4>
+
+<pre><code>For this problem my first instict was to create a list of of all the natural numbers that are palindromic in base 10.  Once created, I looped through said list to check if they are palindromic in base 2. If the number is palindromic in base 2, I added it to a dictionary with the key being the base 2 number, and the value being the base 10 number. Once the dictionary is completed I added all of the values (base 10 numbers) and got the sum of the numbers that are palindromic in base 10 and base 2. </code></pre>
+
 </div>
 </div>
 </div>
@@ -291,9 +307,7 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
-        <p><div class="input">
+<div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
@@ -303,8 +317,9 @@ window.onload = wrap_img;
     </div>
 </div>
 </div>
-</p>
-    </details>
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
+        <p>
 <div class="output_wrapper">
 <div class="output">
 
@@ -320,7 +335,8 @@ window.onload = wrap_img;
 
 </div>
 </div>
-
+</p>
+    </details>
 </div>
     
 
@@ -333,14 +349,22 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Find-the-least-number-for-which-the-proportion-of-bouncy-numbers-is-exactly-99%.">Find the least number for which the proportion of bouncy numbers is exactly 99%.<a class="anchor-link" href="#Find-the-least-number-for-which-the-proportion-of-bouncy-numbers-is-exactly-99%."> </a></h4>
+<p>Working from left-to-right if no digit is exceeded by the digit to its left it is called an increasing number; for example, $134468 .$</p>
+<p>Similarly if no digit is exceeded by the digit to its right it is called a decreasing number; for example, $66420 .$
+We shall call a positive integer that is neither increasing nor decreasing a "bouncy" number; for example, $155349 .$
+Clearly there cannot be any bouncy numbers below one-hundred, but just over half of the numbers below one-thousand (525) are bouncy. In fact, the least number for which the proportion of bouncy numbers first reaches $50 \%$ is 538 .
+Surprisingly, bouncy numbers become more and more common and by the time we reach 21780 the proportion of bouncy numbers is equal to $90 \%$.
+Find the least number for which the proportion of bouncy numbers is exactly $99 \%$.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To start this problem I determined that I needed a function to determine whether or not a number is bouncy. To check if a number is bouncy I had to make sure that the number was neither increasing nor decreasing.</p>
-<p>After creating this function, I'd loop through numbers and if a number was bouncy, I'd add it to a list. To calculate the proportion of bouncy numbers, I'd divide the length of the current list by current number being evaluated. The loop ends when the percent becomes 99%.</p>
+
+<pre><code>To start this problem I determined that I needed a function to determine whether or not a number is bouncy. To check if a number is bouncy I had to make sure that the number was neither increasing nor decreasing. 
+
+After creating this function, I'd loop through numbers and if a number was bouncy, I'd add it to a list. To calculate the proportion of bouncy numbers, I'd divide the length of the current list by current number being evaluated. The loop ends when the percent becomes 99%. </code></pre>
 
 </div>
 </div>
