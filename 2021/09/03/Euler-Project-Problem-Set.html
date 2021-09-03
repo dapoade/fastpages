@@ -77,7 +77,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      3 min read
     
 </span></p>
 
@@ -119,13 +119,13 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="By:-Dapo-Adegbile">By: Dapo Adegbile<a class="anchor-link" href="#By:-Dapo-Adegbile"> </a></h2>
+<h4 id="By:-Dapo-Adegbile"><strong>By: Dapo Adegbile</strong><a class="anchor-link" href="#By:-Dapo-Adegbile"> </a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Problem-6:-Sum-square-difference:-Solved-By----496334">Problem 6: Sum square difference: Solved By -  496334<a class="anchor-link" href="#Problem-6:-Sum-square-difference:-Solved-By----496334"> </a></h3><p><a href="https://projecteuler.net/problem=6">https://projecteuler.net/problem=6</a></p>
+<h2 id="Problem-6:-Sum-square-difference:-Solved-By----496334">Problem 6: Sum square difference: Solved By -  496334<a class="anchor-link" href="#Problem-6:-Sum-square-difference:-Solved-By----496334"> </a></h2><p><a href="https://projecteuler.net/problem=6">https://projecteuler.net/problem=6</a></p>
 
 </div>
 </div>
@@ -133,6 +133,13 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Find-the-difference-between-the-sum-of-the-squares-of-the-first-one-hundred-natural-numbers-and-the-square-of-the-sum.">Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.<a class="anchor-link" href="#Find-the-difference-between-the-sum-of-the-squares-of-the-first-one-hundred-natural-numbers-and-the-square-of-the-sum."> </a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>My approach for this problem was to first generate a list of numbers from 1-100 so I can perform the necessary calculation on each number in the list. Once generated, to find the sum of the squares, I squared each number in the list and then added them together. Next, to get the square of the sum, I added all of the numbers in the original list, and then squared the sum. Lastly I took the difference between the sum of the squares and the square of the sum and arrived at 25164150 for my solution.</p>
+
 </div>
 </div>
 </div>
@@ -173,7 +180,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
@@ -183,7 +192,8 @@ window.onload = wrap_img;
     </div>
 </div>
 </div>
-
+</p>
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -205,14 +215,14 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>My approach for this problem was to generate a list of the first hundred natural numbers</p>
+<h2 id="Problem-36:-Double-base-Palindromes:-Solved-By---89573">Problem 36: Double-base Palindromes: Solved By - 89573<a class="anchor-link" href="#Problem-36:-Double-base-Palindromes:-Solved-By---89573"> </a></h2><p><a href="https://projecteuler.net/problem=36">https://projecteuler.net/problem=36</a></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Problem-36:-Double-base-Palindromes:-Solved-By---89573">Problem 36: Double-base Palindromes: Solved By - 89573<a class="anchor-link" href="#Problem-36:-Double-base-Palindromes:-Solved-By---89573"> </a></h3><p><a href="https://projecteuler.net/problem=36">https://projecteuler.net/problem=36</a></p>
+<p>For this problem my first instict was to create a list of of all the natural numbers that are palindromic in base 10.  Once created, I looped through said list to check if they are palindromic in base 2. If the number is palindromic in base 2, I added it to a dictionary with the key being the base 2 number, and the value being the base 10 number. Once the dictionary is completed I added all of the values (base 10 numbers) and got the sum of the numbers that are palindromic in base 10 and base 2.</p>
 
 </div>
 </div>
@@ -233,7 +243,8 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">palindrome_sum</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-    
+    <span class="sd">&quot;&quot;&quot; Returns a sum of all the natural numbers less than one million that are palindromic </span>
+<span class="sd">    in base 10 and base 2&quot;&quot;&quot;</span>
     <span class="n">palindrome_list</span> <span class="o">=</span> <span class="p">[]</span>
     
     
@@ -280,7 +291,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
@@ -290,9 +303,8 @@ window.onload = wrap_img;
     </div>
 </div>
 </div>
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
-        <p>
+</p>
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -308,14 +320,13 @@ window.onload = wrap_img;
 
 </div>
 </div>
-</p>
-    </details>
+
 </div>
     
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Problem-112:-Bouncy-Numbers:-Solved-By---24437">Problem 112: Bouncy Numbers: Solved By - 24437<a class="anchor-link" href="#Problem-112:-Bouncy-Numbers:-Solved-By---24437"> </a></h3><p><a href="https://projecteuler.net/problem=112">https://projecteuler.net/problem=112</a></p>
+<h2 id="Problem-112:-Bouncy-Numbers:-Solved-By---24437">Problem 112: Bouncy Numbers: Solved By - 24437<a class="anchor-link" href="#Problem-112:-Bouncy-Numbers:-Solved-By---24437"> </a></h2><p><a href="https://projecteuler.net/problem=112">https://projecteuler.net/problem=112</a></p>
 
 </div>
 </div>
@@ -323,6 +334,14 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Find-the-least-number-for-which-the-proportion-of-bouncy-numbers-is-exactly-99%.">Find the least number for which the proportion of bouncy numbers is exactly 99%.<a class="anchor-link" href="#Find-the-least-number-for-which-the-proportion-of-bouncy-numbers-is-exactly-99%."> </a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To start this problem I determined that I needed a function to determine whether or not a number is bouncy. To check if a number is bouncy I had to make sure that the number was neither increasing nor decreasing.</p>
+<p>After creating this function, I'd loop through numbers and if a number was bouncy, I'd add it to a list. To calculate the proportion of bouncy numbers, I'd divide the length of the current list by current number being evaluated. The loop ends when the percent becomes 99%.</p>
+
 </div>
 </div>
 </div>
@@ -336,10 +355,13 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">is_bouncy</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; returns whether or not a number is &#39;bouncy&#39; &quot;&quot;&quot;</span>
+    
     <span class="k">return</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> <span class="o">!=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> <span class="ow">and</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> <span class="o">!=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">))[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 
 
 <span class="k">def</span> <span class="nf">bouncy_99</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot; Finds the least number for which the proportion of bouncy numbers is exactly 99%.&quot;&quot;&quot;</span>
     <span class="n">percent</span> <span class="o">=</span> <span class="mi">0</span> 
     <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">bouncy_list</span> <span class="o">=</span> <span class="p">[]</span> 
@@ -354,16 +376,7 @@ window.onload = wrap_img;
          
 
     <span class="k">return</span> <span class="n">i</span><span class="p">,</span> <span class="n">percent</span> 
-    
-    
-    
-    
-    
-     
-    
-    
-    
-    
+ 
 </pre></div>
 
     </div>
@@ -377,7 +390,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
@@ -387,9 +402,8 @@ window.onload = wrap_img;
     </div>
 </div>
 </div>
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
-        <p>
+</p>
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -405,8 +419,7 @@ window.onload = wrap_img;
 
 </div>
 </div>
-</p>
-    </details>
+
 </div>
     
 
