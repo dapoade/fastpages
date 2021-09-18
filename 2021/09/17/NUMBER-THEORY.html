@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>NUMBER THEORY | Dapo’s Data Science Blog</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="NUMBER THEORY" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://dapoade.github.io/fastpages/2021/09/17/NUMBER-THEORY.html" />
+<meta property="og:url" content="https://dapoade.github.io/fastpages/2021/09/17/NUMBER-THEORY.html" />
+<meta property="og:site_name" content="Dapo’s Data Science Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-09-17T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2021-09-17T00:00:00-05:00","url":"https://dapoade.github.io/fastpages/2021/09/17/NUMBER-THEORY.html","@type":"BlogPosting","headline":"NUMBER THEORY","dateModified":"2021-09-17T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://dapoade.github.io/fastpages/2021/09/17/NUMBER-THEORY.html"},"description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://dapoade.github.io/fastpages/feed.xml" title="Dapo's Data Science Blog" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/fastpages/">Dapo&#39;s Data Science Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/fastpages/about/">About Me</a><a class="page-link" href="/fastpages/search/">Search</a><a class="page-link" href="/fastpages/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">NUMBER THEORY</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-09-17T00:00:00-05:00" itemprop="datePublished">
+        Sep 17, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/dapoade/fastpages/tree/master/_notebooks/2021-09-17-NUMBER-THEORY.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/fastpages/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/dapoade/fastpages/master?filepath=_notebooks%2F2021-09-17-NUMBER-THEORY.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/fastpages/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/dapoade/fastpages/blob/master/_notebooks/2021-09-17-NUMBER-THEORY.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/fastpages/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-09-17-NUMBER-THEORY.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Find-the-first-10-digit-prime-in-the-decimal-expansion-of-17&#960;.">Find the first 10-digit prime in the decimal expansion of 17&#960;.<a class="anchor-link" href="#Find-the-first-10-digit-prime-in-the-decimal-expansion-of-17&#960;."> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">from</span> <span class="nn">mpmath</span> <span class="kn">import</span> <span class="n">mp</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="My-approach-to-this-problem-can-be-broken-down-into-three-parts-(or-helper-functions):">My approach to this problem can be broken down into three parts (or helper functions):<a class="anchor-link" href="#My-approach-to-this-problem-can-be-broken-down-into-three-parts-(or-helper-functions):"> </a></h3><h4 id="1.-Create-a-function-that-expands-the-decimals-of-17pi-to-a-given-precision.">1. Create a function that expands the decimals of 17pi to a given precision.<a class="anchor-link" href="#1.-Create-a-function-that-expands-the-decimals-of-17pi-to-a-given-precision."> </a></h4><h4 id="2.-Write-a-function-that-checks-if-a-specified-value-is-prime.">2. Write a function that checks if a specified value is prime.<a class="anchor-link" href="#2.-Write-a-function-that-checks-if-a-specified-value-is-prime."> </a></h4><h4 id="3.-Write-a-function-that-creates-a-10-digit-sliding-window-and-checks-if-each-window-is-contains-a-prime-number.">3. Write a function that creates a 10 digit sliding window and checks if each window is contains a prime number.<a class="anchor-link" href="#3.-Write-a-function-that-creates-a-10-digit-sliding-window-and-checks-if-each-window-is-contains-a-prime-number."> </a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The function below returns 17pi to the specified precision. To generate a large decimal expansion of a number, I decided to use the 'mpmath' library.</p>
+<p><a href="https://mpmath.org/doc/current/basics.html">https://mpmath.org/doc/current/basics.html</a></p>
+<p>The input for the function are the number of digits (<code>num_digits</code>) we want to expand the number to (after the decimal) and the relevant multiplier for this problem.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">digits_after_decimal</span><span class="p">(</span><span class="n">num_digits</span><span class="p">,</span> <span class="n">number</span><span class="p">,</span> <span class="n">multiplier</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Function to generate a specific amount of numbers after</span>
+<span class="sd">    the decimal of a multiplier (17) * pi &quot;&quot;&quot;</span>
+    <span class="n">mp</span><span class="o">.</span><span class="n">dps</span> <span class="o">=</span> <span class="n">num_digits</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="n">number</span> <span class="o">*</span> <span class="n">multiplier</span><span class="p">)</span>
+    
+    
+    <span class="n">expanded</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">nstr</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">num_digits</span><span class="p">)</span>
+    <span class="n">expanded</span> <span class="o">=</span> <span class="n">expanded</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">expanded</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">digits_after_decimal</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="n">mp</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">17</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
+        <p>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;407075111026485053864937515751549031351879789376798956574058069232878906865552976676592030815990155696517470725799213000595358362359897939331109938184178996654829745932954858794513958590132233816493395289786586320868584184086019974375313809610432455476025637698825926377723553019627691323424235401653317979112307364998972985855656368097319559161194254174036120192619019329947930863530498183005697360361973596217913063202567163995492854400482787015317265860459366742644982057796323150874949111203135&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Unit-Test">Unit Test<a class="anchor-link" href="#Unit-Test"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The 6 digit expansion of numbers after the decimal of pi are </span><span class="se">\&#39;</span><span class="s1">14159265</span><span class="se">\&#39;</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;My function generated 6 digit expansion pi is &#39;</span> <span class="o">+</span>  <span class="nb">str</span><span class="p">(</span><span class="n">digits_after_decimal</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="n">mp</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The 6 digit expansion of numbers after the decimal of pi are &#39;14159265&#39;
+My function generated 6 digit expansion pi is 14159265
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The next helper function I needed was to check whether or not a number is prime. To do this, checked to see if there are any factors between 2 and the square root of the number of interest. I looped from 2 to the square root of the number because if a number n is not a prime, it can be factored into two factors a and b:</p>
+<ul>
+<li>####  n = a * b</li>
+</ul>
+<p>Because a and b can't both be greater than the square root of n, since then the product <strong>a * b</strong> would be greater than <strong>sqrt(n) * sqrt(n) = n</strong>. So in any factorization of n, at least one of the factors must be smaller than the square root of n, and if we can't find any factors less than or equal to the square root, n must be a prime.</p>
+<p>If the number is divisible by the factor, then I returned False. If the number isn't divisible by the factor, then I increased the factor by 1 and the loop continues until a either a factor is found or once the factors we are testing become greater than or equal to the square root of our number of interest.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">is_prime</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+ 
+    <span class="n">max_div</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">max_div</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">return</span> <span class="kc">True</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Unit-Test">Unit Test<a class="anchor-link" href="#Unit-Test"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">test_is_prime</span><span class="p">():</span>
+    
+    <span class="k">assert</span> <span class="n">is_prime</span><span class="p">(</span><span class="mi">131</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
+    <span class="k">assert</span> <span class="n">is_prime</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span>
+    <span class="k">assert</span> <span class="n">is_prime</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
+    <span class="k">assert</span> <span class="n">is_prime</span><span class="p">(</span><span class="mi">169</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Passed!&quot;</span><span class="p">)</span>
+
+<span class="n">test_is_prime</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Passed!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The last helper function creates a sliding window of 10 digits to traverse the string and determine if the 10 digit sequence/number is prime.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">prime_digits</span><span class="p">(</span><span class="n">num_after_dec</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A function to find the first 10 digit sequence that&quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">num_after_dec</span><span class="p">)</span> <span class="o">-</span> <span class="mi">10</span><span class="p">):</span>
+        
+        <span class="n">digits</span> <span class="o">=</span> <span class="n">num_after_dec</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">10</span><span class="p">]</span>
+    
+        <span class="k">if</span> <span class="n">is_prime</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">digits</span><span class="p">)):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">digits</span><span class="si">}</span><span class="s2"> is the first 10 digit prime in the decimal expansion&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">digits</span>
+        
+        
+        
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Final-Solution">Final Solution<a class="anchor-link" href="#Final-Solution"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Unit-Test-for-e">Unit Test for e<a class="anchor-link" href="#Unit-Test-for-e"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">e_digits</span> <span class="o">=</span> <span class="n">digits_after_decimal</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="n">mp</span><span class="o">.</span><span class="n">e</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">prime_digits</span><span class="p">(</span><span class="n">e_digits</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>7427466391 is the first 10 digit prime in the decimal expansion
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;7427466391&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Final-solution-for-17-Pi">Final solution for 17 Pi<a class="anchor-link" href="#Final-solution-for-17-Pi"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pi_digits</span> <span class="o">=</span> <span class="n">digits_after_decimal</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="n">mp</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">17</span><span class="p">)</span>
+<span class="n">prime_digits</span><span class="p">(</span><span class="n">pi_digits</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>8649375157 is the first 10 digit prime in the decimal expansion
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;8649375157&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/fastpages/2021/09/17/NUMBER-THEORY.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/fastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/fastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/fastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/dapoade" title="dapoade"><svg class="svg-icon grey"><use xlink:href="/fastpages/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/_daapo" title="_daapo"><svg class="svg-icon grey"><use xlink:href="/fastpages/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
