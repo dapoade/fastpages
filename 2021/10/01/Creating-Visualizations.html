@@ -93,7 +93,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -139,6 +139,396 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.io</span> <span class="k">as</span> <span class="nn">pio</span>
+<span class="n">pio</span><span class="o">.</span><span class="n">renderers</span><span class="o">.</span><span class="n">default</span><span class="o">=</span> <span class="s1">&#39;notebook_connected&#39;</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">StringIO</span>
+<span class="n">js</span> <span class="o">=</span> <span class="s1">&#39;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js&quot; integrity=&quot;sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;&#39;</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">js</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Load-Packages">Load Packages<a class="anchor-link" href="#Load-Packages"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">shapefile</span> <span class="k">as</span> <span class="nn">shp</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span> 
+<span class="kn">import</span> <span class="nn">plotly</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Load-in-Data">Load in Data<a class="anchor-link" href="#Load-in-Data"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">malaria_deaths</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./malaria_deaths.csv&#39;</span><span class="p">)</span>
+<span class="n">malaria_deaths_age</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./malaria_deaths_age.csv&#39;</span><span class="p">)</span>
+<span class="n">malaria_inc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./malaria_inc.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Data-Cleaning">Data Cleaning<a class="anchor-link" href="#Data-Cleaning"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">malaria_deaths</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Entity&#39;</span><span class="p">,</span> <span class="s1">&#39;Code&#39;</span><span class="p">,</span> <span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="s1">&#39;Deaths&#39;</span><span class="p">]</span>
+<span class="n">malaria_deaths</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
+        <p>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Entity</th>
+      <th>Code</th>
+      <th>Year</th>
+      <th>Deaths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1990</td>
+      <td>6.802930</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1991</td>
+      <td>6.973494</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1992</td>
+      <td>6.989882</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1993</td>
+      <td>7.088983</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1994</td>
+      <td>7.392472</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">malaria_deaths_age</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+
+<span class="n">malaria</span> <span class="o">=</span> <span class="n">malaria_deaths_age</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;entity&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">:</span> <span class="n">a</span><span class="p">[:])</span>
+<span class="n">malaria</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
+        <p>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>entity</th>
+      <th>code</th>
+      <th>year</th>
+      <th>age_group</th>
+      <th>deaths</th>
+    </tr>
+    <tr>
+      <th>entity</th>
+      <th>year</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="5" valign="top">Afghanistan</th>
+      <th rowspan="5" valign="top">1990</th>
+      <th>0</th>
+      <td>1</td>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1990</td>
+      <td>Under 5</td>
+      <td>184.606435</td>
+    </tr>
+    <tr>
+      <th>6156</th>
+      <td>6157</td>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1990</td>
+      <td>70 or older</td>
+      <td>10.728850</td>
+    </tr>
+    <tr>
+      <th>12312</th>
+      <td>12313</td>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1990</td>
+      <td>5-14</td>
+      <td>53.352844</td>
+    </tr>
+    <tr>
+      <th>18468</th>
+      <td>18469</td>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1990</td>
+      <td>15-49</td>
+      <td>414.709676</td>
+    </tr>
+    <tr>
+      <th>24624</th>
+      <td>24625</td>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1990</td>
+      <td>50-69</td>
+      <td>60.541746</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <th>...</th>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th rowspan="5" valign="top">Zimbabwe</th>
+      <th rowspan="5" valign="top">2016</th>
+      <th>6155</th>
+      <td>6156</td>
+      <td>Zimbabwe</td>
+      <td>ZWE</td>
+      <td>2016</td>
+      <td>Under 5</td>
+      <td>745.340029</td>
+    </tr>
+    <tr>
+      <th>12311</th>
+      <td>12312</td>
+      <td>Zimbabwe</td>
+      <td>ZWE</td>
+      <td>2016</td>
+      <td>70 or older</td>
+      <td>66.572213</td>
+    </tr>
+    <tr>
+      <th>18467</th>
+      <td>18468</td>
+      <td>Zimbabwe</td>
+      <td>ZWE</td>
+      <td>2016</td>
+      <td>5-14</td>
+      <td>177.953936</td>
+    </tr>
+    <tr>
+      <th>24623</th>
+      <td>24624</td>
+      <td>Zimbabwe</td>
+      <td>ZWE</td>
+      <td>2016</td>
+      <td>15-49</td>
+      <td>453.902190</td>
+    </tr>
+    <tr>
+      <th>30779</th>
+      <td>30780</td>
+      <td>Zimbabwe</td>
+      <td>ZWE</td>
+      <td>2016</td>
+      <td>50-69</td>
+      <td>97.402058</td>
+    </tr>
+  </tbody>
+</table>
+<p>30780 rows × 6 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Background:">Background:<a class="anchor-link" href="#Background:"> </a></h3><p>In this blog post I've been tasked with analyzing malaria data through three informative visualizations. The data can be found in the following github:</p>
@@ -263,6 +653,147 @@ if (outputEl) {{
 </div>
 </div>
 
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Calculate-the-average-amount-of-deaths-per-age-group,-per-year.">Calculate the average amount of deaths per age group, per year.<a class="anchor-link" href="#Calculate-the-average-amount-of-deaths-per-age-group,-per-year."> </a></h4>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">malaria_deaths_age</span> <span class="o">=</span> <span class="n">malaria_deaths_age</span><span class="p">[[</span><span class="s1">&#39;entity&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span> <span class="p">,</span> <span class="s1">&#39;year&#39;</span> <span class="p">,</span> <span class="s1">&#39;age_group&#39;</span> <span class="p">,</span> <span class="s1">&#39;deaths&#39;</span><span class="p">]]</span>
+<span class="n">malaria_deaths_age_mean</span> <span class="o">=</span> <span class="n">malaria_deaths_age</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;age_group&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s1">&#39;deaths&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">malaria_deaths_age_mean</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
+        <p>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age_group</th>
+      <th>year</th>
+      <th>deaths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>15-49</td>
+      <td>1990</td>
+      <td>972.488397</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>15-49</td>
+      <td>1991</td>
+      <td>1027.454620</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>15-49</td>
+      <td>1992</td>
+      <td>1054.176987</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>15-49</td>
+      <td>1993</td>
+      <td>1093.039510</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>15-49</td>
+      <td>1994</td>
+      <td>1130.813551</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>15-49</td>
+      <td>1995</td>
+      <td>1178.852962</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>15-49</td>
+      <td>1996</td>
+      <td>1231.006569</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>15-49</td>
+      <td>1997</td>
+      <td>1265.392051</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>15-49</td>
+      <td>1998</td>
+      <td>1329.579833</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>15-49</td>
+      <td>1999</td>
+      <td>1380.716326</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>15-49</td>
+      <td>2000</td>
+      <td>1435.443300</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>15-49</td>
+      <td>2001</td>
+      <td>1503.427846</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</p>
+    </details>
 </div>
     
 
