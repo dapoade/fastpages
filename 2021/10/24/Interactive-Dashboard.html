@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Interactive Dashboard | Dapo’s Data Science Blog</title>
+<title>Interactive Doctorates Dashboard | Dapo’s Data Science Blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Interactive Dashboard" />
+<meta property="og:title" content="Interactive Doctorates Dashboard" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
 <meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-10-24T00:00:00-05:00" />
 <script type="application/ld+json">
-{"datePublished":"2021-10-24T00:00:00-05:00","url":"https://dapoade.github.io/fastpages/2021/10/24/Interactive-Dashboard.html","@type":"BlogPosting","headline":"Interactive Dashboard","dateModified":"2021-10-24T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://dapoade.github.io/fastpages/2021/10/24/Interactive-Dashboard.html"},"description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
+{"datePublished":"2021-10-24T00:00:00-05:00","url":"https://dapoade.github.io/fastpages/2021/10/24/Interactive-Dashboard.html","@type":"BlogPosting","headline":"Interactive Doctorates Dashboard","dateModified":"2021-10-24T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://dapoade.github.io/fastpages/2021/10/24/Interactive-Dashboard.html"},"description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://dapoade.github.io/fastpages/feed.xml" title="Dapo's Data Science Blog" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -87,13 +87,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Interactive Dashboard</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-10-24T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Interactive Doctorates Dashboard</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-10-24T00:00:00-05:00" itemprop="datePublished">
         Oct 24, 2021
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      20 min read
+      4 min read
     
 </span></p>
 
@@ -135,7 +135,7 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="PhDs-Awarded-in-the-US">PhDs Awarded in the US<a class="anchor-link" href="#PhDs-Awarded-in-the-US"> </a></h1>
+<h2 id="PhDs-Awarded-in-the-US">PhDs Awarded in the US<a class="anchor-link" href="#PhDs-Awarded-in-the-US"> </a></h2>
 </div>
 </div>
 </div>
@@ -161,7 +161,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
@@ -172,32 +174,37 @@ window.onload = wrap_img;
     </div>
 </div>
 </div>
-
+</p>
+    </details>
 </div>
     
 
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lapse</span>
-<span class="n">state_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Alaska&quot;</span><span class="p">,</span> <span class="s2">&quot;Alabama&quot;</span><span class="p">,</span> <span class="s2">&quot;Arkansas&quot;</span><span class="p">,</span> <span class="s2">&quot;Arizona&quot;</span><span class="p">,</span> <span class="s2">&quot;California&quot;</span><span class="p">,</span> <span class="s2">&quot;Colorado&quot;</span><span class="p">,</span> <span class="s2">&quot;Connecticut&quot;</span><span class="p">,</span> <span class="s2">&quot;District of Columbia&quot;</span><span class="p">,</span> <span class="s2">&quot;Delaware&quot;</span><span class="p">,</span> <span class="s2">&quot;Florida&quot;</span><span class="p">,</span> <span class="s2">&quot;Georgia&quot;</span><span class="p">,</span> <span class="s2">&quot;Hawaii&quot;</span><span class="p">,</span> <span class="s2">&quot;Iowa&quot;</span><span class="p">,</span> <span class="s2">&quot;Idaho&quot;</span><span class="p">,</span> <span class="s2">&quot;Illinois&quot;</span><span class="p">,</span> <span class="s2">&quot;Indiana&quot;</span><span class="p">,</span> <span class="s2">&quot;Kansas&quot;</span><span class="p">,</span> <span class="s2">&quot;Kentucky&quot;</span><span class="p">,</span> <span class="s2">&quot;Louisiana&quot;</span><span class="p">,</span> <span class="s2">&quot;Massachusetts&quot;</span><span class="p">,</span> <span class="s2">&quot;Maryland&quot;</span><span class="p">,</span> <span class="s2">&quot;Maine&quot;</span><span class="p">,</span> <span class="s2">&quot;Michigan&quot;</span><span class="p">,</span> <span class="s2">&quot;Minnesota&quot;</span><span class="p">,</span> <span class="s2">&quot;Missouri&quot;</span><span class="p">,</span> <span class="s2">&quot;Mississippi&quot;</span><span class="p">,</span> <span class="s2">&quot;Montana&quot;</span><span class="p">,</span> <span class="s2">&quot;North Carolina&quot;</span><span class="p">,</span> <span class="s2">&quot;North Dakota&quot;</span><span class="p">,</span> <span class="s2">&quot;Nebraska&quot;</span><span class="p">,</span> <span class="s2">&quot;New Hampshire&quot;</span><span class="p">,</span> <span class="s2">&quot;New Jersey&quot;</span><span class="p">,</span> <span class="s2">&quot;New Mexico&quot;</span><span class="p">,</span> <span class="s2">&quot;Nevada&quot;</span><span class="p">,</span> <span class="s2">&quot;New York&quot;</span><span class="p">,</span> <span class="s2">&quot;Ohio&quot;</span><span class="p">,</span> <span class="s2">&quot;Oklahoma&quot;</span><span class="p">,</span> <span class="s2">&quot;Oregon&quot;</span><span class="p">,</span> <span class="s2">&quot;Pennsylvania&quot;</span><span class="p">,</span> <span class="s2">&quot;Puerto Rico&quot;</span><span class="p">,</span> <span class="s2">&quot;Rhode Island&quot;</span><span class="p">,</span> <span class="s2">&quot;South Carolina&quot;</span><span class="p">,</span> <span class="s2">&quot;South Dakota&quot;</span><span class="p">,</span> <span class="s2">&quot;Tennessee&quot;</span><span class="p">,</span> <span class="s2">&quot;Texas&quot;</span><span class="p">,</span> <span class="s2">&quot;Utah&quot;</span><span class="p">,</span> <span class="s2">&quot;Virginia&quot;</span><span class="p">,</span> <span class="s2">&quot;Vermont&quot;</span><span class="p">,</span> <span class="s2">&quot;Washington&quot;</span><span class="p">,</span> <span class="s2">&quot;Wisconsin&quot;</span><span class="p">,</span> <span class="s2">&quot;West Virginia&quot;</span><span class="p">,</span> <span class="s2">&quot;Wyoming&quot;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">state_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Alaska&quot;</span><span class="p">,</span> <span class="s2">&quot;Alabama&quot;</span><span class="p">,</span> <span class="s2">&quot;Arkansas&quot;</span><span class="p">,</span> <span class="s2">&quot;Arizona&quot;</span><span class="p">,</span> <span class="s2">&quot;California&quot;</span><span class="p">,</span> <span class="s2">&quot;Colorado&quot;</span><span class="p">,</span> <span class="s2">&quot;Connecticut&quot;</span><span class="p">,</span> <span class="s2">&quot;District of Columbia&quot;</span><span class="p">,</span> <span class="s2">&quot;Delaware&quot;</span><span class="p">,</span> <span class="s2">&quot;Florida&quot;</span><span class="p">,</span> <span class="s2">&quot;Georgia&quot;</span><span class="p">,</span> <span class="s2">&quot;Hawaii&quot;</span><span class="p">,</span> <span class="s2">&quot;Iowa&quot;</span><span class="p">,</span> <span class="s2">&quot;Idaho&quot;</span><span class="p">,</span> <span class="s2">&quot;Illinois&quot;</span><span class="p">,</span> <span class="s2">&quot;Indiana&quot;</span><span class="p">,</span> <span class="s2">&quot;Kansas&quot;</span><span class="p">,</span> <span class="s2">&quot;Kentucky&quot;</span><span class="p">,</span> <span class="s2">&quot;Louisiana&quot;</span><span class="p">,</span> <span class="s2">&quot;Massachusetts&quot;</span><span class="p">,</span> <span class="s2">&quot;Maryland&quot;</span><span class="p">,</span> <span class="s2">&quot;Maine&quot;</span><span class="p">,</span> <span class="s2">&quot;Michigan&quot;</span><span class="p">,</span> <span class="s2">&quot;Minnesota&quot;</span><span class="p">,</span> <span class="s2">&quot;Missouri&quot;</span><span class="p">,</span> <span class="s2">&quot;Mississippi&quot;</span><span class="p">,</span> <span class="s2">&quot;Montana&quot;</span><span class="p">,</span> <span class="s2">&quot;North Carolina&quot;</span><span class="p">,</span> <span class="s2">&quot;North Dakota&quot;</span><span class="p">,</span> <span class="s2">&quot;Nebraska&quot;</span><span class="p">,</span> <span class="s2">&quot;New Hampshire&quot;</span><span class="p">,</span> <span class="s2">&quot;New Jersey&quot;</span><span class="p">,</span> <span class="s2">&quot;New Mexico&quot;</span><span class="p">,</span> <span class="s2">&quot;Nevada&quot;</span><span class="p">,</span> <span class="s2">&quot;New York&quot;</span><span class="p">,</span> <span class="s2">&quot;Ohio&quot;</span><span class="p">,</span> <span class="s2">&quot;Oklahoma&quot;</span><span class="p">,</span> <span class="s2">&quot;Oregon&quot;</span><span class="p">,</span> <span class="s2">&quot;Pennsylvania&quot;</span><span class="p">,</span> <span class="s2">&quot;Puerto Rico&quot;</span><span class="p">,</span> <span class="s2">&quot;Rhode Island&quot;</span><span class="p">,</span> <span class="s2">&quot;South Carolina&quot;</span><span class="p">,</span> <span class="s2">&quot;South Dakota&quot;</span><span class="p">,</span> <span class="s2">&quot;Tennessee&quot;</span><span class="p">,</span> <span class="s2">&quot;Texas&quot;</span><span class="p">,</span> <span class="s2">&quot;Utah&quot;</span><span class="p">,</span> <span class="s2">&quot;Virginia&quot;</span><span class="p">,</span> <span class="s2">&quot;Vermont&quot;</span><span class="p">,</span> <span class="s2">&quot;Washington&quot;</span><span class="p">,</span> <span class="s2">&quot;Wisconsin&quot;</span><span class="p">,</span> <span class="s2">&quot;West Virginia&quot;</span><span class="p">,</span> <span class="s2">&quot;Wyoming&quot;</span><span class="p">]</span>
 </pre></div>
 
     </div>
 </div>
 </div>
-
+</p>
+    </details>
 </div>
     
 
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
@@ -207,9 +214,8 @@ window.onload = wrap_img;
     </div>
 </div>
 </div>
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
-        <p>
+</p>
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -226,15 +232,16 @@ Workbook contains no default style, apply openpyxl&#39;s default
 
 </div>
 </div>
-</p>
-    </details>
+
 </div>
     
 
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
@@ -244,53 +251,6 @@ Workbook contains no default style, apply openpyxl&#39;s default
     </div>
 </div>
 </div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
-        <p>
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;bound method IndexOpsMixin.value_counts of Unnamed: 0
-NaN                                          NaN
-All institutions                All institutions
-Alabama                                  Alabama
-Alabama A&amp;M U.                    Alabama A&amp;M U.
-Alabama State U.                Alabama State U.
-                                   ...          
-Medical C. Wisconsin        Medical C. Wisconsin
-U. Wisconsin-Madison        U. Wisconsin-Madison
-U. Wisconsin-Milwaukee    U. Wisconsin-Milwaukee
-Wyoming                                  Wyoming
-U. Wyoming                            U. Wyoming
-Name: Unnamed: 0, Length: 482, dtype: object&gt;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
 </p>
     </details>
 </div>
@@ -299,7 +259,9 @@ Name: Unnamed: 0, Length: 482, dtype: object&gt;</pre>
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
@@ -309,1340 +271,6 @@ Name: Unnamed: 0, Length: 482, dtype: object&gt;</pre>
     </div>
 </div>
 </div>
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
-        <p>
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Unnamed: 0</th>
-      <th>Unnamed: 1</th>
-      <th>Life sciences</th>
-      <th>Unnamed: 3</th>
-      <th>Unnamed: 4</th>
-      <th>Unnamed: 5</th>
-      <th>Physical sciences and earth sciences</th>
-      <th>Unnamed: 7</th>
-      <th>Unnamed: 8</th>
-      <th>Unnamed: 9</th>
-      <th>...</th>
-      <th>Unnamed: 20</th>
-      <th>Unnamed: 21</th>
-      <th>Unnamed: 22</th>
-      <th>Unnamed: 23</th>
-      <th>Unnamed: 24</th>
-      <th>Unnamed: 25</th>
-      <th>Unnamed: 26</th>
-      <th>Unnamed: 27</th>
-      <th>Unnamed: 28</th>
-      <th>Unnamed: 29</th>
-    </tr>
-    <tr>
-      <th>Unnamed: 0</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Alaska</th>
-      <td>Alaska</td>
-      <td>52.0</td>
-      <td>10.0</td>
-      <td>4.0</td>
-      <td>6.0</td>
-      <td>0.0</td>
-      <td>20.0</td>
-      <td>2.0</td>
-      <td>15.0</td>
-      <td>3.0</td>
-      <td>...</td>
-      <td>3.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>Alabama</th>
-      <td>Alabama</td>
-      <td>707.0</td>
-      <td>188.0</td>
-      <td>32.0</td>
-      <td>122.0</td>
-      <td>34.0</td>
-      <td>59.0</td>
-      <td>23.0</td>
-      <td>7.0</td>
-      <td>29.0</td>
-      <td>...</td>
-      <td>131.0</td>
-      <td>5.0</td>
-      <td>4.0</td>
-      <td>14.0</td>
-      <td>17.0</td>
-      <td>22.0</td>
-      <td>6.0</td>
-      <td>13.0</td>
-      <td>18.0</td>
-      <td>32.0</td>
-    </tr>
-    <tr>
-      <th>Arkansas</th>
-      <td>Arkansas</td>
-      <td>202.0</td>
-      <td>75.0</td>
-      <td>18.0</td>
-      <td>35.0</td>
-      <td>22.0</td>
-      <td>17.0</td>
-      <td>11.0</td>
-      <td>1.0</td>
-      <td>5.0</td>
-      <td>...</td>
-      <td>33.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>2.0</td>
-      <td>4.0</td>
-      <td>7.0</td>
-      <td>4.0</td>
-      <td>2.0</td>
-      <td>1.0</td>
-      <td>9.0</td>
-    </tr>
-    <tr>
-      <th>Arizona</th>
-      <td>Arizona</td>
-      <td>801.0</td>
-      <td>133.0</td>
-      <td>23.0</td>
-      <td>74.0</td>
-      <td>36.0</td>
-      <td>110.0</td>
-      <td>31.0</td>
-      <td>29.0</td>
-      <td>50.0</td>
-      <td>...</td>
-      <td>141.0</td>
-      <td>2.0</td>
-      <td>10.0</td>
-      <td>8.0</td>
-      <td>10.0</td>
-      <td>50.0</td>
-      <td>6.0</td>
-      <td>12.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-    </tr>
-    <tr>
-      <th>California</th>
-      <td>California</td>
-      <td>6105.0</td>
-      <td>1300.0</td>
-      <td>111.0</td>
-      <td>1015.0</td>
-      <td>174.0</td>
-      <td>841.0</td>
-      <td>367.0</td>
-      <td>178.0</td>
-      <td>296.0</td>
-      <td>...</td>
-      <td>1151.0</td>
-      <td>38.0</td>
-      <td>166.0</td>
-      <td>97.0</td>
-      <td>57.0</td>
-      <td>269.0</td>
-      <td>10.0</td>
-      <td>164.0</td>
-      <td>153.0</td>
-      <td>197.0</td>
-    </tr>
-    <tr>
-      <th>Colorado</th>
-      <td>Colorado</td>
-      <td>1005.0</td>
-      <td>212.0</td>
-      <td>25.0</td>
-      <td>162.0</td>
-      <td>25.0</td>
-      <td>155.0</td>
-      <td>42.0</td>
-      <td>47.0</td>
-      <td>66.0</td>
-      <td>...</td>
-      <td>206.0</td>
-      <td>22.0</td>
-      <td>8.0</td>
-      <td>14.0</td>
-      <td>39.0</td>
-      <td>29.0</td>
-      <td>0.0</td>
-      <td>12.0</td>
-      <td>29.0</td>
-      <td>53.0</td>
-    </tr>
-    <tr>
-      <th>Connecticut</th>
-      <td>Connecticut</td>
-      <td>748.0</td>
-      <td>196.0</td>
-      <td>14.0</td>
-      <td>155.0</td>
-      <td>27.0</td>
-      <td>104.0</td>
-      <td>56.0</td>
-      <td>15.0</td>
-      <td>33.0</td>
-      <td>...</td>
-      <td>97.0</td>
-      <td>0.0</td>
-      <td>18.0</td>
-      <td>12.0</td>
-      <td>3.0</td>
-      <td>17.0</td>
-      <td>0.0</td>
-      <td>10.0</td>
-      <td>18.0</td>
-      <td>19.0</td>
-    </tr>
-    <tr>
-      <th>District of Columbia</th>
-      <td>District of Columbia</td>
-      <td>623.0</td>
-      <td>55.0</td>
-      <td>0.0</td>
-      <td>50.0</td>
-      <td>5.0</td>
-      <td>37.0</td>
-      <td>19.0</td>
-      <td>6.0</td>
-      <td>12.0</td>
-      <td>...</td>
-      <td>78.0</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>5.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>10.0</td>
-      <td>55.0</td>
-    </tr>
-    <tr>
-      <th>Delaware</th>
-      <td>Delaware</td>
-      <td>238.0</td>
-      <td>59.0</td>
-      <td>9.0</td>
-      <td>40.0</td>
-      <td>10.0</td>
-      <td>24.0</td>
-      <td>2.0</td>
-      <td>11.0</td>
-      <td>11.0</td>
-      <td>...</td>
-      <td>69.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>27.0</td>
-      <td>13.0</td>
-      <td>7.0</td>
-      <td>0.0</td>
-      <td>11.0</td>
-      <td>8.0</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>Florida</th>
-      <td>Florida</td>
-      <td>2336.0</td>
-      <td>490.0</td>
-      <td>77.0</td>
-      <td>285.0</td>
-      <td>128.0</td>
-      <td>259.0</td>
-      <td>94.0</td>
-      <td>64.0</td>
-      <td>101.0</td>
-      <td>...</td>
-      <td>419.0</td>
-      <td>21.0</td>
-      <td>26.0</td>
-      <td>29.0</td>
-      <td>45.0</td>
-      <td>78.0</td>
-      <td>23.0</td>
-      <td>48.0</td>
-      <td>51.0</td>
-      <td>98.0</td>
-    </tr>
-    <tr>
-      <th>Georgia</th>
-      <td>Georgia</td>
-      <td>1492.0</td>
-      <td>357.0</td>
-      <td>40.0</td>
-      <td>261.0</td>
-      <td>56.0</td>
-      <td>129.0</td>
-      <td>72.0</td>
-      <td>12.0</td>
-      <td>45.0</td>
-      <td>...</td>
-      <td>360.0</td>
-      <td>46.0</td>
-      <td>37.0</td>
-      <td>35.0</td>
-      <td>19.0</td>
-      <td>80.0</td>
-      <td>8.0</td>
-      <td>25.0</td>
-      <td>51.0</td>
-      <td>59.0</td>
-    </tr>
-    <tr>
-      <th>Hawaii</th>
-      <td>Hawaii</td>
-      <td>189.0</td>
-      <td>44.0</td>
-      <td>6.0</td>
-      <td>26.0</td>
-      <td>12.0</td>
-      <td>29.0</td>
-      <td>2.0</td>
-      <td>21.0</td>
-      <td>6.0</td>
-      <td>...</td>
-      <td>11.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>7.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Iowa</th>
-      <td>Iowa</td>
-      <td>715.0</td>
-      <td>150.0</td>
-      <td>31.0</td>
-      <td>90.0</td>
-      <td>29.0</td>
-      <td>79.0</td>
-      <td>45.0</td>
-      <td>10.0</td>
-      <td>24.0</td>
-      <td>...</td>
-      <td>152.0</td>
-      <td>10.0</td>
-      <td>14.0</td>
-      <td>8.0</td>
-      <td>14.0</td>
-      <td>27.0</td>
-      <td>7.0</td>
-      <td>6.0</td>
-      <td>30.0</td>
-      <td>36.0</td>
-    </tr>
-    <tr>
-      <th>Idaho</th>
-      <td>Idaho</td>
-      <td>103.0</td>
-      <td>32.0</td>
-      <td>12.0</td>
-      <td>15.0</td>
-      <td>5.0</td>
-      <td>14.0</td>
-      <td>2.0</td>
-      <td>9.0</td>
-      <td>3.0</td>
-      <td>...</td>
-      <td>16.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>4.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
-      <td>1.0</td>
-      <td>4.0</td>
-    </tr>
-    <tr>
-      <th>Illinois</th>
-      <td>Illinois</td>
-      <td>2534.0</td>
-      <td>478.0</td>
-      <td>49.0</td>
-      <td>340.0</td>
-      <td>89.0</td>
-      <td>267.0</td>
-      <td>133.0</td>
-      <td>19.0</td>
-      <td>115.0</td>
-      <td>...</td>
-      <td>435.0</td>
-      <td>13.0</td>
-      <td>41.0</td>
-      <td>39.0</td>
-      <td>35.0</td>
-      <td>91.0</td>
-      <td>9.0</td>
-      <td>66.0</td>
-      <td>53.0</td>
-      <td>88.0</td>
-    </tr>
-    <tr>
-      <th>Indiana</th>
-      <td>Indiana</td>
-      <td>1572.0</td>
-      <td>309.0</td>
-      <td>60.0</td>
-      <td>204.0</td>
-      <td>45.0</td>
-      <td>195.0</td>
-      <td>115.0</td>
-      <td>15.0</td>
-      <td>65.0</td>
-      <td>...</td>
-      <td>329.0</td>
-      <td>38.0</td>
-      <td>17.0</td>
-      <td>31.0</td>
-      <td>32.0</td>
-      <td>56.0</td>
-      <td>9.0</td>
-      <td>15.0</td>
-      <td>57.0</td>
-      <td>74.0</td>
-    </tr>
-    <tr>
-      <th>Kansas</th>
-      <td>Kansas</td>
-      <td>530.0</td>
-      <td>148.0</td>
-      <td>42.0</td>
-      <td>75.0</td>
-      <td>31.0</td>
-      <td>44.0</td>
-      <td>33.0</td>
-      <td>3.0</td>
-      <td>8.0</td>
-      <td>...</td>
-      <td>74.0</td>
-      <td>3.0</td>
-      <td>6.0</td>
-      <td>10.0</td>
-      <td>11.0</td>
-      <td>13.0</td>
-      <td>13.0</td>
-      <td>1.0</td>
-      <td>8.0</td>
-      <td>9.0</td>
-    </tr>
-    <tr>
-      <th>Kentucky</th>
-      <td>Kentucky</td>
-      <td>497.0</td>
-      <td>138.0</td>
-      <td>15.0</td>
-      <td>82.0</td>
-      <td>41.0</td>
-      <td>22.0</td>
-      <td>13.0</td>
-      <td>1.0</td>
-      <td>8.0</td>
-      <td>...</td>
-      <td>48.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>10.0</td>
-      <td>9.0</td>
-      <td>9.0</td>
-      <td>3.0</td>
-      <td>6.0</td>
-      <td>3.0</td>
-      <td>6.0</td>
-    </tr>
-    <tr>
-      <th>Louisiana</th>
-      <td>Louisiana</td>
-      <td>607.0</td>
-      <td>157.0</td>
-      <td>27.0</td>
-      <td>98.0</td>
-      <td>32.0</td>
-      <td>68.0</td>
-      <td>41.0</td>
-      <td>12.0</td>
-      <td>15.0</td>
-      <td>...</td>
-      <td>74.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
-      <td>7.0</td>
-      <td>6.0</td>
-      <td>5.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>7.0</td>
-      <td>40.0</td>
-    </tr>
-    <tr>
-      <th>Massachusetts</th>
-      <td>Massachusetts</td>
-      <td>2879.0</td>
-      <td>706.0</td>
-      <td>57.0</td>
-      <td>510.0</td>
-      <td>139.0</td>
-      <td>372.0</td>
-      <td>126.0</td>
-      <td>78.0</td>
-      <td>168.0</td>
-      <td>...</td>
-      <td>597.0</td>
-      <td>20.0</td>
-      <td>74.0</td>
-      <td>53.0</td>
-      <td>16.0</td>
-      <td>85.0</td>
-      <td>7.0</td>
-      <td>54.0</td>
-      <td>102.0</td>
-      <td>186.0</td>
-    </tr>
-    <tr>
-      <th>Maryland</th>
-      <td>Maryland</td>
-      <td>1295.0</td>
-      <td>439.0</td>
-      <td>32.0</td>
-      <td>279.0</td>
-      <td>128.0</td>
-      <td>141.0</td>
-      <td>40.0</td>
-      <td>34.0</td>
-      <td>67.0</td>
-      <td>...</td>
-      <td>225.0</td>
-      <td>7.0</td>
-      <td>49.0</td>
-      <td>13.0</td>
-      <td>19.0</td>
-      <td>47.0</td>
-      <td>0.0</td>
-      <td>20.0</td>
-      <td>35.0</td>
-      <td>35.0</td>
-    </tr>
-    <tr>
-      <th>Maine</th>
-      <td>Maine</td>
-      <td>56.0</td>
-      <td>15.0</td>
-      <td>4.0</td>
-      <td>11.0</td>
-      <td>0.0</td>
-      <td>11.0</td>
-      <td>0.0</td>
-      <td>9.0</td>
-      <td>2.0</td>
-      <td>...</td>
-      <td>11.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>3.0</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>Michigan</th>
-      <td>Michigan</td>
-      <td>1906.0</td>
-      <td>385.0</td>
-      <td>51.0</td>
-      <td>257.0</td>
-      <td>77.0</td>
-      <td>206.0</td>
-      <td>98.0</td>
-      <td>25.0</td>
-      <td>83.0</td>
-      <td>...</td>
-      <td>394.0</td>
-      <td>17.0</td>
-      <td>28.0</td>
-      <td>32.0</td>
-      <td>22.0</td>
-      <td>90.0</td>
-      <td>9.0</td>
-      <td>35.0</td>
-      <td>75.0</td>
-      <td>86.0</td>
-    </tr>
-    <tr>
-      <th>Minnesota</th>
-      <td>Minnesota</td>
-      <td>1374.0</td>
-      <td>397.0</td>
-      <td>50.0</td>
-      <td>145.0</td>
-      <td>202.0</td>
-      <td>66.0</td>
-      <td>38.0</td>
-      <td>12.0</td>
-      <td>16.0</td>
-      <td>...</td>
-      <td>128.0</td>
-      <td>11.0</td>
-      <td>19.0</td>
-      <td>23.0</td>
-      <td>8.0</td>
-      <td>30.0</td>
-      <td>1.0</td>
-      <td>7.0</td>
-      <td>21.0</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>Missouri</th>
-      <td>Missouri</td>
-      <td>1022.0</td>
-      <td>259.0</td>
-      <td>34.0</td>
-      <td>190.0</td>
-      <td>35.0</td>
-      <td>108.0</td>
-      <td>49.0</td>
-      <td>28.0</td>
-      <td>31.0</td>
-      <td>...</td>
-      <td>171.0</td>
-      <td>4.0</td>
-      <td>26.0</td>
-      <td>9.0</td>
-      <td>16.0</td>
-      <td>26.0</td>
-      <td>2.0</td>
-      <td>9.0</td>
-      <td>29.0</td>
-      <td>50.0</td>
-    </tr>
-    <tr>
-      <th>Mississippi</th>
-      <td>Mississippi</td>
-      <td>460.0</td>
-      <td>107.0</td>
-      <td>27.0</td>
-      <td>41.0</td>
-      <td>39.0</td>
-      <td>48.0</td>
-      <td>32.0</td>
-      <td>8.0</td>
-      <td>8.0</td>
-      <td>...</td>
-      <td>51.0</td>
-      <td>2.0</td>
-      <td>2.0</td>
-      <td>3.0</td>
-      <td>8.0</td>
-      <td>5.0</td>
-      <td>4.0</td>
-      <td>5.0</td>
-      <td>6.0</td>
-      <td>16.0</td>
-    </tr>
-    <tr>
-      <th>Montana</th>
-      <td>Montana</td>
-      <td>119.0</td>
-      <td>36.0</td>
-      <td>9.0</td>
-      <td>27.0</td>
-      <td>0.0</td>
-      <td>15.0</td>
-      <td>7.0</td>
-      <td>2.0</td>
-      <td>6.0</td>
-      <td>...</td>
-      <td>9.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>North Carolina</th>
-      <td>North Carolina</td>
-      <td>1833.0</td>
-      <td>545.0</td>
-      <td>73.0</td>
-      <td>369.0</td>
-      <td>103.0</td>
-      <td>194.0</td>
-      <td>101.0</td>
-      <td>49.0</td>
-      <td>44.0</td>
-      <td>...</td>
-      <td>316.0</td>
-      <td>7.0</td>
-      <td>47.0</td>
-      <td>28.0</td>
-      <td>18.0</td>
-      <td>58.0</td>
-      <td>14.0</td>
-      <td>29.0</td>
-      <td>40.0</td>
-      <td>75.0</td>
-    </tr>
-    <tr>
-      <th>North Dakota</th>
-      <td>North Dakota</td>
-      <td>181.0</td>
-      <td>46.0</td>
-      <td>16.0</td>
-      <td>21.0</td>
-      <td>9.0</td>
-      <td>10.0</td>
-      <td>6.0</td>
-      <td>1.0</td>
-      <td>3.0</td>
-      <td>...</td>
-      <td>30.0</td>
-      <td>3.0</td>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>6.0</td>
-      <td>4.0</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>1.0</td>
-      <td>10.0</td>
-    </tr>
-    <tr>
-      <th>Nebraska</th>
-      <td>Nebraska</td>
-      <td>363.0</td>
-      <td>143.0</td>
-      <td>36.0</td>
-      <td>80.0</td>
-      <td>27.0</td>
-      <td>32.0</td>
-      <td>19.0</td>
-      <td>6.0</td>
-      <td>7.0</td>
-      <td>...</td>
-      <td>44.0</td>
-      <td>0.0</td>
-      <td>6.0</td>
-      <td>2.0</td>
-      <td>4.0</td>
-      <td>8.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>12.0</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>New Hampshire</th>
-      <td>New Hampshire</td>
-      <td>158.0</td>
-      <td>60.0</td>
-      <td>9.0</td>
-      <td>50.0</td>
-      <td>1.0</td>
-      <td>32.0</td>
-      <td>11.0</td>
-      <td>5.0</td>
-      <td>16.0</td>
-      <td>...</td>
-      <td>17.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>2.0</td>
-      <td>6.0</td>
-    </tr>
-    <tr>
-      <th>New Jersey</th>
-      <td>New Jersey</td>
-      <td>1115.0</td>
-      <td>209.0</td>
-      <td>26.0</td>
-      <td>160.0</td>
-      <td>23.0</td>
-      <td>145.0</td>
-      <td>62.0</td>
-      <td>28.0</td>
-      <td>55.0</td>
-      <td>...</td>
-      <td>194.0</td>
-      <td>3.0</td>
-      <td>24.0</td>
-      <td>19.0</td>
-      <td>11.0</td>
-      <td>39.0</td>
-      <td>8.0</td>
-      <td>13.0</td>
-      <td>32.0</td>
-      <td>45.0</td>
-    </tr>
-    <tr>
-      <th>New Mexico</th>
-      <td>New Mexico</td>
-      <td>299.0</td>
-      <td>45.0</td>
-      <td>6.0</td>
-      <td>31.0</td>
-      <td>8.0</td>
-      <td>44.0</td>
-      <td>9.0</td>
-      <td>11.0</td>
-      <td>24.0</td>
-      <td>...</td>
-      <td>74.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>10.0</td>
-      <td>5.0</td>
-      <td>16.0</td>
-      <td>5.0</td>
-      <td>7.0</td>
-      <td>5.0</td>
-      <td>24.0</td>
-    </tr>
-    <tr>
-      <th>Nevada</th>
-      <td>Nevada</td>
-      <td>200.0</td>
-      <td>21.0</td>
-      <td>4.0</td>
-      <td>11.0</td>
-      <td>6.0</td>
-      <td>20.0</td>
-      <td>11.0</td>
-      <td>4.0</td>
-      <td>5.0</td>
-      <td>...</td>
-      <td>34.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>4.0</td>
-      <td>6.0</td>
-      <td>3.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>6.0</td>
-      <td>10.0</td>
-    </tr>
-    <tr>
-      <th>New York</th>
-      <td>New York</td>
-      <td>4064.0</td>
-      <td>859.0</td>
-      <td>68.0</td>
-      <td>677.0</td>
-      <td>114.0</td>
-      <td>411.0</td>
-      <td>164.0</td>
-      <td>63.0</td>
-      <td>184.0</td>
-      <td>...</td>
-      <td>567.0</td>
-      <td>14.0</td>
-      <td>81.0</td>
-      <td>68.0</td>
-      <td>35.0</td>
-      <td>112.0</td>
-      <td>12.0</td>
-      <td>57.0</td>
-      <td>74.0</td>
-      <td>114.0</td>
-    </tr>
-    <tr>
-      <th>Ohio</th>
-      <td>Ohio</td>
-      <td>2028.0</td>
-      <td>440.0</td>
-      <td>46.0</td>
-      <td>314.0</td>
-      <td>80.0</td>
-      <td>260.0</td>
-      <td>141.0</td>
-      <td>14.0</td>
-      <td>105.0</td>
-      <td>...</td>
-      <td>410.0</td>
-      <td>23.0</td>
-      <td>40.0</td>
-      <td>35.0</td>
-      <td>15.0</td>
-      <td>77.0</td>
-      <td>7.0</td>
-      <td>47.0</td>
-      <td>61.0</td>
-      <td>105.0</td>
-    </tr>
-    <tr>
-      <th>Oklahoma</th>
-      <td>Oklahoma</td>
-      <td>524.0</td>
-      <td>137.0</td>
-      <td>28.0</td>
-      <td>86.0</td>
-      <td>23.0</td>
-      <td>46.0</td>
-      <td>16.0</td>
-      <td>17.0</td>
-      <td>13.0</td>
-      <td>...</td>
-      <td>70.0</td>
-      <td>3.0</td>
-      <td>5.0</td>
-      <td>7.0</td>
-      <td>7.0</td>
-      <td>15.0</td>
-      <td>4.0</td>
-      <td>0.0</td>
-      <td>10.0</td>
-      <td>19.0</td>
-    </tr>
-    <tr>
-      <th>Oregon</th>
-      <td>Oregon</td>
-      <td>572.0</td>
-      <td>183.0</td>
-      <td>54.0</td>
-      <td>104.0</td>
-      <td>25.0</td>
-      <td>95.0</td>
-      <td>40.0</td>
-      <td>28.0</td>
-      <td>27.0</td>
-      <td>...</td>
-      <td>71.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>5.0</td>
-      <td>8.0</td>
-      <td>16.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>Pennsylvania</th>
-      <td>Pennsylvania</td>
-      <td>2628.0</td>
-      <td>589.0</td>
-      <td>43.0</td>
-      <td>416.0</td>
-      <td>130.0</td>
-      <td>248.0</td>
-      <td>124.0</td>
-      <td>33.0</td>
-      <td>91.0</td>
-      <td>...</td>
-      <td>545.0</td>
-      <td>10.0</td>
-      <td>64.0</td>
-      <td>60.0</td>
-      <td>27.0</td>
-      <td>80.0</td>
-      <td>15.0</td>
-      <td>68.0</td>
-      <td>85.0</td>
-      <td>136.0</td>
-    </tr>
-    <tr>
-      <th>Puerto Rico</th>
-      <td>Puerto Rico</td>
-      <td>84.0</td>
-      <td>8.0</td>
-      <td>2.0</td>
-      <td>6.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>2.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>...</td>
-      <td>4.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>Rhode Island</th>
-      <td>Rhode Island</td>
-      <td>322.0</td>
-      <td>67.0</td>
-      <td>3.0</td>
-      <td>55.0</td>
-      <td>9.0</td>
-      <td>47.0</td>
-      <td>12.0</td>
-      <td>22.0</td>
-      <td>13.0</td>
-      <td>...</td>
-      <td>39.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
-      <td>3.0</td>
-      <td>0.0</td>
-      <td>8.0</td>
-      <td>2.0</td>
-      <td>5.0</td>
-      <td>7.0</td>
-      <td>9.0</td>
-    </tr>
-    <tr>
-      <th>South Carolina</th>
-      <td>South Carolina</td>
-      <td>506.0</td>
-      <td>100.0</td>
-      <td>8.0</td>
-      <td>57.0</td>
-      <td>35.0</td>
-      <td>59.0</td>
-      <td>38.0</td>
-      <td>7.0</td>
-      <td>14.0</td>
-      <td>...</td>
-      <td>141.0</td>
-      <td>0.0</td>
-      <td>17.0</td>
-      <td>19.0</td>
-      <td>24.0</td>
-      <td>22.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>31.0</td>
-      <td>16.0</td>
-    </tr>
-    <tr>
-      <th>South Dakota</th>
-      <td>South Dakota</td>
-      <td>110.0</td>
-      <td>37.0</td>
-      <td>21.0</td>
-      <td>13.0</td>
-      <td>3.0</td>
-      <td>12.0</td>
-      <td>8.0</td>
-      <td>4.0</td>
-      <td>0.0</td>
-      <td>...</td>
-      <td>21.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>6.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
-      <td>2.0</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>Tennessee</th>
-      <td>Tennessee</td>
-      <td>1032.0</td>
-      <td>270.0</td>
-      <td>22.0</td>
-      <td>186.0</td>
-      <td>62.0</td>
-      <td>87.0</td>
-      <td>51.0</td>
-      <td>7.0</td>
-      <td>29.0</td>
-      <td>...</td>
-      <td>185.0</td>
-      <td>3.0</td>
-      <td>19.0</td>
-      <td>19.0</td>
-      <td>7.0</td>
-      <td>41.0</td>
-      <td>8.0</td>
-      <td>20.0</td>
-      <td>11.0</td>
-      <td>57.0</td>
-    </tr>
-    <tr>
-      <th>Texas</th>
-      <td>Texas</td>
-      <td>4068.0</td>
-      <td>905.0</td>
-      <td>99.0</td>
-      <td>609.0</td>
-      <td>197.0</td>
-      <td>424.0</td>
-      <td>177.0</td>
-      <td>101.0</td>
-      <td>146.0</td>
-      <td>...</td>
-      <td>880.0</td>
-      <td>34.0</td>
-      <td>77.0</td>
-      <td>92.0</td>
-      <td>84.0</td>
-      <td>184.0</td>
-      <td>23.0</td>
-      <td>91.0</td>
-      <td>114.0</td>
-      <td>181.0</td>
-    </tr>
-    <tr>
-      <th>Utah</th>
-      <td>Utah</td>
-      <td>508.0</td>
-      <td>116.0</td>
-      <td>8.0</td>
-      <td>85.0</td>
-      <td>23.0</td>
-      <td>54.0</td>
-      <td>27.0</td>
-      <td>13.0</td>
-      <td>14.0</td>
-      <td>...</td>
-      <td>99.0</td>
-      <td>1.0</td>
-      <td>15.0</td>
-      <td>12.0</td>
-      <td>12.0</td>
-      <td>15.0</td>
-      <td>0.0</td>
-      <td>6.0</td>
-      <td>16.0</td>
-      <td>22.0</td>
-    </tr>
-    <tr>
-      <th>Virginia</th>
-      <td>Virginia</td>
-      <td>1513.0</td>
-      <td>265.0</td>
-      <td>51.0</td>
-      <td>157.0</td>
-      <td>57.0</td>
-      <td>145.0</td>
-      <td>56.0</td>
-      <td>29.0</td>
-      <td>60.0</td>
-      <td>...</td>
-      <td>291.0</td>
-      <td>11.0</td>
-      <td>22.0</td>
-      <td>13.0</td>
-      <td>33.0</td>
-      <td>63.0</td>
-      <td>6.0</td>
-      <td>21.0</td>
-      <td>43.0</td>
-      <td>79.0</td>
-    </tr>
-    <tr>
-      <th>Vermont</th>
-      <td>Vermont</td>
-      <td>61.0</td>
-      <td>25.0</td>
-      <td>9.0</td>
-      <td>15.0</td>
-      <td>1.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>...</td>
-      <td>7.0</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>Washington</th>
-      <td>Washington</td>
-      <td>914.0</td>
-      <td>256.0</td>
-      <td>51.0</td>
-      <td>143.0</td>
-      <td>62.0</td>
-      <td>110.0</td>
-      <td>49.0</td>
-      <td>24.0</td>
-      <td>37.0</td>
-      <td>...</td>
-      <td>171.0</td>
-      <td>5.0</td>
-      <td>24.0</td>
-      <td>24.0</td>
-      <td>10.0</td>
-      <td>27.0</td>
-      <td>3.0</td>
-      <td>12.0</td>
-      <td>26.0</td>
-      <td>40.0</td>
-    </tr>
-    <tr>
-      <th>Wisconsin</th>
-      <td>Wisconsin</td>
-      <td>1130.0</td>
-      <td>311.0</td>
-      <td>51.0</td>
-      <td>183.0</td>
-      <td>77.0</td>
-      <td>121.0</td>
-      <td>60.0</td>
-      <td>18.0</td>
-      <td>43.0</td>
-      <td>...</td>
-      <td>176.0</td>
-      <td>0.0</td>
-      <td>19.0</td>
-      <td>17.0</td>
-      <td>13.0</td>
-      <td>37.0</td>
-      <td>9.0</td>
-      <td>16.0</td>
-      <td>31.0</td>
-      <td>34.0</td>
-    </tr>
-    <tr>
-      <th>West Virginia</th>
-      <td>West Virginia</td>
-      <td>183.0</td>
-      <td>52.0</td>
-      <td>10.0</td>
-      <td>29.0</td>
-      <td>13.0</td>
-      <td>17.0</td>
-      <td>7.0</td>
-      <td>2.0</td>
-      <td>8.0</td>
-      <td>...</td>
-      <td>32.0</td>
-      <td>2.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
-      <td>2.0</td>
-      <td>4.0</td>
-      <td>4.0</td>
-      <td>2.0</td>
-      <td>6.0</td>
-      <td>7.0</td>
-    </tr>
-    <tr>
-      <th>Wyoming</th>
-      <td>Wyoming</td>
-      <td>101.0</td>
-      <td>28.0</td>
-      <td>3.0</td>
-      <td>25.0</td>
-      <td>0.0</td>
-      <td>18.0</td>
-      <td>7.0</td>
-      <td>7.0</td>
-      <td>4.0</td>
-      <td>...</td>
-      <td>12.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>2.0</td>
-    </tr>
-  </tbody>
-</table>
-<p>52 rows × 30 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
 </p>
     </details>
 </div>
@@ -1655,1331 +283,22 @@ Name: Unnamed: 0, Length: 482, dtype: object&gt;</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
-        <p>
-<div class="output_wrapper">
-<div class="output">
 
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Unnamed: 0</th>
-      <th>Unnamed: 1</th>
-      <th>Life sciences</th>
-      <th>Unnamed: 3</th>
-      <th>Unnamed: 4</th>
-      <th>Unnamed: 5</th>
-      <th>Physical sciences and earth sciences</th>
-      <th>Unnamed: 7</th>
-      <th>Unnamed: 8</th>
-      <th>Unnamed: 9</th>
-      <th>...</th>
-      <th>Unnamed: 20</th>
-      <th>Unnamed: 21</th>
-      <th>Unnamed: 22</th>
-      <th>Unnamed: 23</th>
-      <th>Unnamed: 24</th>
-      <th>Unnamed: 25</th>
-      <th>Unnamed: 26</th>
-      <th>Unnamed: 27</th>
-      <th>Unnamed: 28</th>
-      <th>Unnamed: 29</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Alaska</td>
-      <td>52.0</td>
-      <td>10.0</td>
-      <td>4.0</td>
-      <td>6.0</td>
-      <td>0.0</td>
-      <td>20.0</td>
-      <td>2.0</td>
-      <td>15.0</td>
-      <td>3.0</td>
-      <td>...</td>
-      <td>3.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Alabama</td>
-      <td>707.0</td>
-      <td>188.0</td>
-      <td>32.0</td>
-      <td>122.0</td>
-      <td>34.0</td>
-      <td>59.0</td>
-      <td>23.0</td>
-      <td>7.0</td>
-      <td>29.0</td>
-      <td>...</td>
-      <td>131.0</td>
-      <td>5.0</td>
-      <td>4.0</td>
-      <td>14.0</td>
-      <td>17.0</td>
-      <td>22.0</td>
-      <td>6.0</td>
-      <td>13.0</td>
-      <td>18.0</td>
-      <td>32.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Arkansas</td>
-      <td>202.0</td>
-      <td>75.0</td>
-      <td>18.0</td>
-      <td>35.0</td>
-      <td>22.0</td>
-      <td>17.0</td>
-      <td>11.0</td>
-      <td>1.0</td>
-      <td>5.0</td>
-      <td>...</td>
-      <td>33.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>2.0</td>
-      <td>4.0</td>
-      <td>7.0</td>
-      <td>4.0</td>
-      <td>2.0</td>
-      <td>1.0</td>
-      <td>9.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Arizona</td>
-      <td>801.0</td>
-      <td>133.0</td>
-      <td>23.0</td>
-      <td>74.0</td>
-      <td>36.0</td>
-      <td>110.0</td>
-      <td>31.0</td>
-      <td>29.0</td>
-      <td>50.0</td>
-      <td>...</td>
-      <td>141.0</td>
-      <td>2.0</td>
-      <td>10.0</td>
-      <td>8.0</td>
-      <td>10.0</td>
-      <td>50.0</td>
-      <td>6.0</td>
-      <td>12.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>California</td>
-      <td>6105.0</td>
-      <td>1300.0</td>
-      <td>111.0</td>
-      <td>1015.0</td>
-      <td>174.0</td>
-      <td>841.0</td>
-      <td>367.0</td>
-      <td>178.0</td>
-      <td>296.0</td>
-      <td>...</td>
-      <td>1151.0</td>
-      <td>38.0</td>
-      <td>166.0</td>
-      <td>97.0</td>
-      <td>57.0</td>
-      <td>269.0</td>
-      <td>10.0</td>
-      <td>164.0</td>
-      <td>153.0</td>
-      <td>197.0</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Colorado</td>
-      <td>1005.0</td>
-      <td>212.0</td>
-      <td>25.0</td>
-      <td>162.0</td>
-      <td>25.0</td>
-      <td>155.0</td>
-      <td>42.0</td>
-      <td>47.0</td>
-      <td>66.0</td>
-      <td>...</td>
-      <td>206.0</td>
-      <td>22.0</td>
-      <td>8.0</td>
-      <td>14.0</td>
-      <td>39.0</td>
-      <td>29.0</td>
-      <td>0.0</td>
-      <td>12.0</td>
-      <td>29.0</td>
-      <td>53.0</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Connecticut</td>
-      <td>748.0</td>
-      <td>196.0</td>
-      <td>14.0</td>
-      <td>155.0</td>
-      <td>27.0</td>
-      <td>104.0</td>
-      <td>56.0</td>
-      <td>15.0</td>
-      <td>33.0</td>
-      <td>...</td>
-      <td>97.0</td>
-      <td>0.0</td>
-      <td>18.0</td>
-      <td>12.0</td>
-      <td>3.0</td>
-      <td>17.0</td>
-      <td>0.0</td>
-      <td>10.0</td>
-      <td>18.0</td>
-      <td>19.0</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>District of Columbia</td>
-      <td>623.0</td>
-      <td>55.0</td>
-      <td>0.0</td>
-      <td>50.0</td>
-      <td>5.0</td>
-      <td>37.0</td>
-      <td>19.0</td>
-      <td>6.0</td>
-      <td>12.0</td>
-      <td>...</td>
-      <td>78.0</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>5.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>10.0</td>
-      <td>55.0</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Delaware</td>
-      <td>238.0</td>
-      <td>59.0</td>
-      <td>9.0</td>
-      <td>40.0</td>
-      <td>10.0</td>
-      <td>24.0</td>
-      <td>2.0</td>
-      <td>11.0</td>
-      <td>11.0</td>
-      <td>...</td>
-      <td>69.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>27.0</td>
-      <td>13.0</td>
-      <td>7.0</td>
-      <td>0.0</td>
-      <td>11.0</td>
-      <td>8.0</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Florida</td>
-      <td>2336.0</td>
-      <td>490.0</td>
-      <td>77.0</td>
-      <td>285.0</td>
-      <td>128.0</td>
-      <td>259.0</td>
-      <td>94.0</td>
-      <td>64.0</td>
-      <td>101.0</td>
-      <td>...</td>
-      <td>419.0</td>
-      <td>21.0</td>
-      <td>26.0</td>
-      <td>29.0</td>
-      <td>45.0</td>
-      <td>78.0</td>
-      <td>23.0</td>
-      <td>48.0</td>
-      <td>51.0</td>
-      <td>98.0</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Georgia</td>
-      <td>1492.0</td>
-      <td>357.0</td>
-      <td>40.0</td>
-      <td>261.0</td>
-      <td>56.0</td>
-      <td>129.0</td>
-      <td>72.0</td>
-      <td>12.0</td>
-      <td>45.0</td>
-      <td>...</td>
-      <td>360.0</td>
-      <td>46.0</td>
-      <td>37.0</td>
-      <td>35.0</td>
-      <td>19.0</td>
-      <td>80.0</td>
-      <td>8.0</td>
-      <td>25.0</td>
-      <td>51.0</td>
-      <td>59.0</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Hawaii</td>
-      <td>189.0</td>
-      <td>44.0</td>
-      <td>6.0</td>
-      <td>26.0</td>
-      <td>12.0</td>
-      <td>29.0</td>
-      <td>2.0</td>
-      <td>21.0</td>
-      <td>6.0</td>
-      <td>...</td>
-      <td>11.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>7.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Iowa</td>
-      <td>715.0</td>
-      <td>150.0</td>
-      <td>31.0</td>
-      <td>90.0</td>
-      <td>29.0</td>
-      <td>79.0</td>
-      <td>45.0</td>
-      <td>10.0</td>
-      <td>24.0</td>
-      <td>...</td>
-      <td>152.0</td>
-      <td>10.0</td>
-      <td>14.0</td>
-      <td>8.0</td>
-      <td>14.0</td>
-      <td>27.0</td>
-      <td>7.0</td>
-      <td>6.0</td>
-      <td>30.0</td>
-      <td>36.0</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>Idaho</td>
-      <td>103.0</td>
-      <td>32.0</td>
-      <td>12.0</td>
-      <td>15.0</td>
-      <td>5.0</td>
-      <td>14.0</td>
-      <td>2.0</td>
-      <td>9.0</td>
-      <td>3.0</td>
-      <td>...</td>
-      <td>16.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>4.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
-      <td>1.0</td>
-      <td>4.0</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>Illinois</td>
-      <td>2534.0</td>
-      <td>478.0</td>
-      <td>49.0</td>
-      <td>340.0</td>
-      <td>89.0</td>
-      <td>267.0</td>
-      <td>133.0</td>
-      <td>19.0</td>
-      <td>115.0</td>
-      <td>...</td>
-      <td>435.0</td>
-      <td>13.0</td>
-      <td>41.0</td>
-      <td>39.0</td>
-      <td>35.0</td>
-      <td>91.0</td>
-      <td>9.0</td>
-      <td>66.0</td>
-      <td>53.0</td>
-      <td>88.0</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>Indiana</td>
-      <td>1572.0</td>
-      <td>309.0</td>
-      <td>60.0</td>
-      <td>204.0</td>
-      <td>45.0</td>
-      <td>195.0</td>
-      <td>115.0</td>
-      <td>15.0</td>
-      <td>65.0</td>
-      <td>...</td>
-      <td>329.0</td>
-      <td>38.0</td>
-      <td>17.0</td>
-      <td>31.0</td>
-      <td>32.0</td>
-      <td>56.0</td>
-      <td>9.0</td>
-      <td>15.0</td>
-      <td>57.0</td>
-      <td>74.0</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>Kansas</td>
-      <td>530.0</td>
-      <td>148.0</td>
-      <td>42.0</td>
-      <td>75.0</td>
-      <td>31.0</td>
-      <td>44.0</td>
-      <td>33.0</td>
-      <td>3.0</td>
-      <td>8.0</td>
-      <td>...</td>
-      <td>74.0</td>
-      <td>3.0</td>
-      <td>6.0</td>
-      <td>10.0</td>
-      <td>11.0</td>
-      <td>13.0</td>
-      <td>13.0</td>
-      <td>1.0</td>
-      <td>8.0</td>
-      <td>9.0</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>Kentucky</td>
-      <td>497.0</td>
-      <td>138.0</td>
-      <td>15.0</td>
-      <td>82.0</td>
-      <td>41.0</td>
-      <td>22.0</td>
-      <td>13.0</td>
-      <td>1.0</td>
-      <td>8.0</td>
-      <td>...</td>
-      <td>48.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>10.0</td>
-      <td>9.0</td>
-      <td>9.0</td>
-      <td>3.0</td>
-      <td>6.0</td>
-      <td>3.0</td>
-      <td>6.0</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>Louisiana</td>
-      <td>607.0</td>
-      <td>157.0</td>
-      <td>27.0</td>
-      <td>98.0</td>
-      <td>32.0</td>
-      <td>68.0</td>
-      <td>41.0</td>
-      <td>12.0</td>
-      <td>15.0</td>
-      <td>...</td>
-      <td>74.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
-      <td>7.0</td>
-      <td>6.0</td>
-      <td>5.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>7.0</td>
-      <td>40.0</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>Massachusetts</td>
-      <td>2879.0</td>
-      <td>706.0</td>
-      <td>57.0</td>
-      <td>510.0</td>
-      <td>139.0</td>
-      <td>372.0</td>
-      <td>126.0</td>
-      <td>78.0</td>
-      <td>168.0</td>
-      <td>...</td>
-      <td>597.0</td>
-      <td>20.0</td>
-      <td>74.0</td>
-      <td>53.0</td>
-      <td>16.0</td>
-      <td>85.0</td>
-      <td>7.0</td>
-      <td>54.0</td>
-      <td>102.0</td>
-      <td>186.0</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>Maryland</td>
-      <td>1295.0</td>
-      <td>439.0</td>
-      <td>32.0</td>
-      <td>279.0</td>
-      <td>128.0</td>
-      <td>141.0</td>
-      <td>40.0</td>
-      <td>34.0</td>
-      <td>67.0</td>
-      <td>...</td>
-      <td>225.0</td>
-      <td>7.0</td>
-      <td>49.0</td>
-      <td>13.0</td>
-      <td>19.0</td>
-      <td>47.0</td>
-      <td>0.0</td>
-      <td>20.0</td>
-      <td>35.0</td>
-      <td>35.0</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>Maine</td>
-      <td>56.0</td>
-      <td>15.0</td>
-      <td>4.0</td>
-      <td>11.0</td>
-      <td>0.0</td>
-      <td>11.0</td>
-      <td>0.0</td>
-      <td>9.0</td>
-      <td>2.0</td>
-      <td>...</td>
-      <td>11.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>3.0</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>Michigan</td>
-      <td>1906.0</td>
-      <td>385.0</td>
-      <td>51.0</td>
-      <td>257.0</td>
-      <td>77.0</td>
-      <td>206.0</td>
-      <td>98.0</td>
-      <td>25.0</td>
-      <td>83.0</td>
-      <td>...</td>
-      <td>394.0</td>
-      <td>17.0</td>
-      <td>28.0</td>
-      <td>32.0</td>
-      <td>22.0</td>
-      <td>90.0</td>
-      <td>9.0</td>
-      <td>35.0</td>
-      <td>75.0</td>
-      <td>86.0</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>Minnesota</td>
-      <td>1374.0</td>
-      <td>397.0</td>
-      <td>50.0</td>
-      <td>145.0</td>
-      <td>202.0</td>
-      <td>66.0</td>
-      <td>38.0</td>
-      <td>12.0</td>
-      <td>16.0</td>
-      <td>...</td>
-      <td>128.0</td>
-      <td>11.0</td>
-      <td>19.0</td>
-      <td>23.0</td>
-      <td>8.0</td>
-      <td>30.0</td>
-      <td>1.0</td>
-      <td>7.0</td>
-      <td>21.0</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>Missouri</td>
-      <td>1022.0</td>
-      <td>259.0</td>
-      <td>34.0</td>
-      <td>190.0</td>
-      <td>35.0</td>
-      <td>108.0</td>
-      <td>49.0</td>
-      <td>28.0</td>
-      <td>31.0</td>
-      <td>...</td>
-      <td>171.0</td>
-      <td>4.0</td>
-      <td>26.0</td>
-      <td>9.0</td>
-      <td>16.0</td>
-      <td>26.0</td>
-      <td>2.0</td>
-      <td>9.0</td>
-      <td>29.0</td>
-      <td>50.0</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>Mississippi</td>
-      <td>460.0</td>
-      <td>107.0</td>
-      <td>27.0</td>
-      <td>41.0</td>
-      <td>39.0</td>
-      <td>48.0</td>
-      <td>32.0</td>
-      <td>8.0</td>
-      <td>8.0</td>
-      <td>...</td>
-      <td>51.0</td>
-      <td>2.0</td>
-      <td>2.0</td>
-      <td>3.0</td>
-      <td>8.0</td>
-      <td>5.0</td>
-      <td>4.0</td>
-      <td>5.0</td>
-      <td>6.0</td>
-      <td>16.0</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>Montana</td>
-      <td>119.0</td>
-      <td>36.0</td>
-      <td>9.0</td>
-      <td>27.0</td>
-      <td>0.0</td>
-      <td>15.0</td>
-      <td>7.0</td>
-      <td>2.0</td>
-      <td>6.0</td>
-      <td>...</td>
-      <td>9.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>North Carolina</td>
-      <td>1833.0</td>
-      <td>545.0</td>
-      <td>73.0</td>
-      <td>369.0</td>
-      <td>103.0</td>
-      <td>194.0</td>
-      <td>101.0</td>
-      <td>49.0</td>
-      <td>44.0</td>
-      <td>...</td>
-      <td>316.0</td>
-      <td>7.0</td>
-      <td>47.0</td>
-      <td>28.0</td>
-      <td>18.0</td>
-      <td>58.0</td>
-      <td>14.0</td>
-      <td>29.0</td>
-      <td>40.0</td>
-      <td>75.0</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>North Dakota</td>
-      <td>181.0</td>
-      <td>46.0</td>
-      <td>16.0</td>
-      <td>21.0</td>
-      <td>9.0</td>
-      <td>10.0</td>
-      <td>6.0</td>
-      <td>1.0</td>
-      <td>3.0</td>
-      <td>...</td>
-      <td>30.0</td>
-      <td>3.0</td>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>6.0</td>
-      <td>4.0</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>1.0</td>
-      <td>10.0</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>Nebraska</td>
-      <td>363.0</td>
-      <td>143.0</td>
-      <td>36.0</td>
-      <td>80.0</td>
-      <td>27.0</td>
-      <td>32.0</td>
-      <td>19.0</td>
-      <td>6.0</td>
-      <td>7.0</td>
-      <td>...</td>
-      <td>44.0</td>
-      <td>0.0</td>
-      <td>6.0</td>
-      <td>2.0</td>
-      <td>4.0</td>
-      <td>8.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>12.0</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>New Hampshire</td>
-      <td>158.0</td>
-      <td>60.0</td>
-      <td>9.0</td>
-      <td>50.0</td>
-      <td>1.0</td>
-      <td>32.0</td>
-      <td>11.0</td>
-      <td>5.0</td>
-      <td>16.0</td>
-      <td>...</td>
-      <td>17.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>2.0</td>
-      <td>6.0</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>New Jersey</td>
-      <td>1115.0</td>
-      <td>209.0</td>
-      <td>26.0</td>
-      <td>160.0</td>
-      <td>23.0</td>
-      <td>145.0</td>
-      <td>62.0</td>
-      <td>28.0</td>
-      <td>55.0</td>
-      <td>...</td>
-      <td>194.0</td>
-      <td>3.0</td>
-      <td>24.0</td>
-      <td>19.0</td>
-      <td>11.0</td>
-      <td>39.0</td>
-      <td>8.0</td>
-      <td>13.0</td>
-      <td>32.0</td>
-      <td>45.0</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>New Mexico</td>
-      <td>299.0</td>
-      <td>45.0</td>
-      <td>6.0</td>
-      <td>31.0</td>
-      <td>8.0</td>
-      <td>44.0</td>
-      <td>9.0</td>
-      <td>11.0</td>
-      <td>24.0</td>
-      <td>...</td>
-      <td>74.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>10.0</td>
-      <td>5.0</td>
-      <td>16.0</td>
-      <td>5.0</td>
-      <td>7.0</td>
-      <td>5.0</td>
-      <td>24.0</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>Nevada</td>
-      <td>200.0</td>
-      <td>21.0</td>
-      <td>4.0</td>
-      <td>11.0</td>
-      <td>6.0</td>
-      <td>20.0</td>
-      <td>11.0</td>
-      <td>4.0</td>
-      <td>5.0</td>
-      <td>...</td>
-      <td>34.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>4.0</td>
-      <td>6.0</td>
-      <td>3.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>6.0</td>
-      <td>10.0</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>New York</td>
-      <td>4064.0</td>
-      <td>859.0</td>
-      <td>68.0</td>
-      <td>677.0</td>
-      <td>114.0</td>
-      <td>411.0</td>
-      <td>164.0</td>
-      <td>63.0</td>
-      <td>184.0</td>
-      <td>...</td>
-      <td>567.0</td>
-      <td>14.0</td>
-      <td>81.0</td>
-      <td>68.0</td>
-      <td>35.0</td>
-      <td>112.0</td>
-      <td>12.0</td>
-      <td>57.0</td>
-      <td>74.0</td>
-      <td>114.0</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>Ohio</td>
-      <td>2028.0</td>
-      <td>440.0</td>
-      <td>46.0</td>
-      <td>314.0</td>
-      <td>80.0</td>
-      <td>260.0</td>
-      <td>141.0</td>
-      <td>14.0</td>
-      <td>105.0</td>
-      <td>...</td>
-      <td>410.0</td>
-      <td>23.0</td>
-      <td>40.0</td>
-      <td>35.0</td>
-      <td>15.0</td>
-      <td>77.0</td>
-      <td>7.0</td>
-      <td>47.0</td>
-      <td>61.0</td>
-      <td>105.0</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>Oklahoma</td>
-      <td>524.0</td>
-      <td>137.0</td>
-      <td>28.0</td>
-      <td>86.0</td>
-      <td>23.0</td>
-      <td>46.0</td>
-      <td>16.0</td>
-      <td>17.0</td>
-      <td>13.0</td>
-      <td>...</td>
-      <td>70.0</td>
-      <td>3.0</td>
-      <td>5.0</td>
-      <td>7.0</td>
-      <td>7.0</td>
-      <td>15.0</td>
-      <td>4.0</td>
-      <td>0.0</td>
-      <td>10.0</td>
-      <td>19.0</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>Oregon</td>
-      <td>572.0</td>
-      <td>183.0</td>
-      <td>54.0</td>
-      <td>104.0</td>
-      <td>25.0</td>
-      <td>95.0</td>
-      <td>40.0</td>
-      <td>28.0</td>
-      <td>27.0</td>
-      <td>...</td>
-      <td>71.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>5.0</td>
-      <td>8.0</td>
-      <td>16.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>20.0</td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td>Pennsylvania</td>
-      <td>2628.0</td>
-      <td>589.0</td>
-      <td>43.0</td>
-      <td>416.0</td>
-      <td>130.0</td>
-      <td>248.0</td>
-      <td>124.0</td>
-      <td>33.0</td>
-      <td>91.0</td>
-      <td>...</td>
-      <td>545.0</td>
-      <td>10.0</td>
-      <td>64.0</td>
-      <td>60.0</td>
-      <td>27.0</td>
-      <td>80.0</td>
-      <td>15.0</td>
-      <td>68.0</td>
-      <td>85.0</td>
-      <td>136.0</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>Puerto Rico</td>
-      <td>84.0</td>
-      <td>8.0</td>
-      <td>2.0</td>
-      <td>6.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>2.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>...</td>
-      <td>4.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>Rhode Island</td>
-      <td>322.0</td>
-      <td>67.0</td>
-      <td>3.0</td>
-      <td>55.0</td>
-      <td>9.0</td>
-      <td>47.0</td>
-      <td>12.0</td>
-      <td>22.0</td>
-      <td>13.0</td>
-      <td>...</td>
-      <td>39.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
-      <td>3.0</td>
-      <td>0.0</td>
-      <td>8.0</td>
-      <td>2.0</td>
-      <td>5.0</td>
-      <td>7.0</td>
-      <td>9.0</td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td>South Carolina</td>
-      <td>506.0</td>
-      <td>100.0</td>
-      <td>8.0</td>
-      <td>57.0</td>
-      <td>35.0</td>
-      <td>59.0</td>
-      <td>38.0</td>
-      <td>7.0</td>
-      <td>14.0</td>
-      <td>...</td>
-      <td>141.0</td>
-      <td>0.0</td>
-      <td>17.0</td>
-      <td>19.0</td>
-      <td>24.0</td>
-      <td>22.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>31.0</td>
-      <td>16.0</td>
-    </tr>
-    <tr>
-      <th>42</th>
-      <td>South Dakota</td>
-      <td>110.0</td>
-      <td>37.0</td>
-      <td>21.0</td>
-      <td>13.0</td>
-      <td>3.0</td>
-      <td>12.0</td>
-      <td>8.0</td>
-      <td>4.0</td>
-      <td>0.0</td>
-      <td>...</td>
-      <td>21.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>6.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
-      <td>2.0</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td>Tennessee</td>
-      <td>1032.0</td>
-      <td>270.0</td>
-      <td>22.0</td>
-      <td>186.0</td>
-      <td>62.0</td>
-      <td>87.0</td>
-      <td>51.0</td>
-      <td>7.0</td>
-      <td>29.0</td>
-      <td>...</td>
-      <td>185.0</td>
-      <td>3.0</td>
-      <td>19.0</td>
-      <td>19.0</td>
-      <td>7.0</td>
-      <td>41.0</td>
-      <td>8.0</td>
-      <td>20.0</td>
-      <td>11.0</td>
-      <td>57.0</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>Texas</td>
-      <td>4068.0</td>
-      <td>905.0</td>
-      <td>99.0</td>
-      <td>609.0</td>
-      <td>197.0</td>
-      <td>424.0</td>
-      <td>177.0</td>
-      <td>101.0</td>
-      <td>146.0</td>
-      <td>...</td>
-      <td>880.0</td>
-      <td>34.0</td>
-      <td>77.0</td>
-      <td>92.0</td>
-      <td>84.0</td>
-      <td>184.0</td>
-      <td>23.0</td>
-      <td>91.0</td>
-      <td>114.0</td>
-      <td>181.0</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>Utah</td>
-      <td>508.0</td>
-      <td>116.0</td>
-      <td>8.0</td>
-      <td>85.0</td>
-      <td>23.0</td>
-      <td>54.0</td>
-      <td>27.0</td>
-      <td>13.0</td>
-      <td>14.0</td>
-      <td>...</td>
-      <td>99.0</td>
-      <td>1.0</td>
-      <td>15.0</td>
-      <td>12.0</td>
-      <td>12.0</td>
-      <td>15.0</td>
-      <td>0.0</td>
-      <td>6.0</td>
-      <td>16.0</td>
-      <td>22.0</td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td>Virginia</td>
-      <td>1513.0</td>
-      <td>265.0</td>
-      <td>51.0</td>
-      <td>157.0</td>
-      <td>57.0</td>
-      <td>145.0</td>
-      <td>56.0</td>
-      <td>29.0</td>
-      <td>60.0</td>
-      <td>...</td>
-      <td>291.0</td>
-      <td>11.0</td>
-      <td>22.0</td>
-      <td>13.0</td>
-      <td>33.0</td>
-      <td>63.0</td>
-      <td>6.0</td>
-      <td>21.0</td>
-      <td>43.0</td>
-      <td>79.0</td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td>Vermont</td>
-      <td>61.0</td>
-      <td>25.0</td>
-      <td>9.0</td>
-      <td>15.0</td>
-      <td>1.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>...</td>
-      <td>7.0</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>Washington</td>
-      <td>914.0</td>
-      <td>256.0</td>
-      <td>51.0</td>
-      <td>143.0</td>
-      <td>62.0</td>
-      <td>110.0</td>
-      <td>49.0</td>
-      <td>24.0</td>
-      <td>37.0</td>
-      <td>...</td>
-      <td>171.0</td>
-      <td>5.0</td>
-      <td>24.0</td>
-      <td>24.0</td>
-      <td>10.0</td>
-      <td>27.0</td>
-      <td>3.0</td>
-      <td>12.0</td>
-      <td>26.0</td>
-      <td>40.0</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>Wisconsin</td>
-      <td>1130.0</td>
-      <td>311.0</td>
-      <td>51.0</td>
-      <td>183.0</td>
-      <td>77.0</td>
-      <td>121.0</td>
-      <td>60.0</td>
-      <td>18.0</td>
-      <td>43.0</td>
-      <td>...</td>
-      <td>176.0</td>
-      <td>0.0</td>
-      <td>19.0</td>
-      <td>17.0</td>
-      <td>13.0</td>
-      <td>37.0</td>
-      <td>9.0</td>
-      <td>16.0</td>
-      <td>31.0</td>
-      <td>34.0</td>
-    </tr>
-    <tr>
-      <th>50</th>
-      <td>West Virginia</td>
-      <td>183.0</td>
-      <td>52.0</td>
-      <td>10.0</td>
-      <td>29.0</td>
-      <td>13.0</td>
-      <td>17.0</td>
-      <td>7.0</td>
-      <td>2.0</td>
-      <td>8.0</td>
-      <td>...</td>
-      <td>32.0</td>
-      <td>2.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
-      <td>2.0</td>
-      <td>4.0</td>
-      <td>4.0</td>
-      <td>2.0</td>
-      <td>6.0</td>
-      <td>7.0</td>
-    </tr>
-    <tr>
-      <th>51</th>
-      <td>Wyoming</td>
-      <td>101.0</td>
-      <td>28.0</td>
-      <td>3.0</td>
-      <td>25.0</td>
-      <td>0.0</td>
-      <td>18.0</td>
-      <td>7.0</td>
-      <td>7.0</td>
-      <td>4.0</td>
-      <td>...</td>
-      <td>12.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>5.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>2.0</td>
-    </tr>
-  </tbody>
-</table>
-<p>52 rows × 30 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-</p>
-    </details>
 </div>
     
 
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
@@ -2991,103 +310,6 @@ Name: Unnamed: 0, Length: 482, dtype: object&gt;</pre>
     </div>
 </div>
 </div>
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
-        <p>
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Unnamed: 0</th>
-      <th>Unnamed: 1</th>
-      <th>Life sciences</th>
-      <th>Physical sciences and earth sciences</th>
-      <th>Mathematics and computer sciences</th>
-      <th>Psychology and social sciences</th>
-      <th>Unnamed: 20</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Alaska</td>
-      <td>52.0</td>
-      <td>10.0</td>
-      <td>20.0</td>
-      <td>0.0</td>
-      <td>17.0</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Alabama</td>
-      <td>707.0</td>
-      <td>188.0</td>
-      <td>59.0</td>
-      <td>48.0</td>
-      <td>89.0</td>
-      <td>131.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Arkansas</td>
-      <td>202.0</td>
-      <td>75.0</td>
-      <td>17.0</td>
-      <td>10.0</td>
-      <td>19.0</td>
-      <td>33.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Arizona</td>
-      <td>801.0</td>
-      <td>133.0</td>
-      <td>110.0</td>
-      <td>51.0</td>
-      <td>156.0</td>
-      <td>141.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>California</td>
-      <td>6105.0</td>
-      <td>1300.0</td>
-      <td>841.0</td>
-      <td>495.0</td>
-      <td>1132.0</td>
-      <td>1151.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
 </p>
     </details>
 </div>
@@ -3096,7 +318,9 @@ Name: Unnamed: 0, Length: 482, dtype: object&gt;</pre>
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
@@ -3108,573 +332,6 @@ Name: Unnamed: 0, Length: 482, dtype: object&gt;</pre>
     </div>
 </div>
 </div>
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
-        <p>
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>State</th>
-      <th>All Fields</th>
-      <th>Life Sciences</th>
-      <th>Physical Sciences and Earth Sciences</th>
-      <th>Mathematics and Computer Sciences</th>
-      <th>Psychology and Social Sciences</th>
-      <th>Engineering</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Alaska</td>
-      <td>52.0</td>
-      <td>10.0</td>
-      <td>20.0</td>
-      <td>0.0</td>
-      <td>17.0</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Alabama</td>
-      <td>707.0</td>
-      <td>188.0</td>
-      <td>59.0</td>
-      <td>48.0</td>
-      <td>89.0</td>
-      <td>131.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Arkansas</td>
-      <td>202.0</td>
-      <td>75.0</td>
-      <td>17.0</td>
-      <td>10.0</td>
-      <td>19.0</td>
-      <td>33.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Arizona</td>
-      <td>801.0</td>
-      <td>133.0</td>
-      <td>110.0</td>
-      <td>51.0</td>
-      <td>156.0</td>
-      <td>141.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>California</td>
-      <td>6105.0</td>
-      <td>1300.0</td>
-      <td>841.0</td>
-      <td>495.0</td>
-      <td>1132.0</td>
-      <td>1151.0</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Colorado</td>
-      <td>1005.0</td>
-      <td>212.0</td>
-      <td>155.0</td>
-      <td>67.0</td>
-      <td>128.0</td>
-      <td>206.0</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Connecticut</td>
-      <td>748.0</td>
-      <td>196.0</td>
-      <td>104.0</td>
-      <td>60.0</td>
-      <td>129.0</td>
-      <td>97.0</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>District of Columbia</td>
-      <td>623.0</td>
-      <td>55.0</td>
-      <td>37.0</td>
-      <td>24.0</td>
-      <td>207.0</td>
-      <td>78.0</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Delaware</td>
-      <td>238.0</td>
-      <td>59.0</td>
-      <td>24.0</td>
-      <td>19.0</td>
-      <td>45.0</td>
-      <td>69.0</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Florida</td>
-      <td>2336.0</td>
-      <td>490.0</td>
-      <td>259.0</td>
-      <td>145.0</td>
-      <td>409.0</td>
-      <td>419.0</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Georgia</td>
-      <td>1492.0</td>
-      <td>357.0</td>
-      <td>129.0</td>
-      <td>99.0</td>
-      <td>216.0</td>
-      <td>360.0</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Hawaii</td>
-      <td>189.0</td>
-      <td>44.0</td>
-      <td>29.0</td>
-      <td>4.0</td>
-      <td>61.0</td>
-      <td>11.0</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Iowa</td>
-      <td>715.0</td>
-      <td>150.0</td>
-      <td>79.0</td>
-      <td>72.0</td>
-      <td>82.0</td>
-      <td>152.0</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>Idaho</td>
-      <td>103.0</td>
-      <td>32.0</td>
-      <td>14.0</td>
-      <td>5.0</td>
-      <td>15.0</td>
-      <td>16.0</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>Illinois</td>
-      <td>2534.0</td>
-      <td>478.0</td>
-      <td>267.0</td>
-      <td>193.0</td>
-      <td>445.0</td>
-      <td>435.0</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>Indiana</td>
-      <td>1572.0</td>
-      <td>309.0</td>
-      <td>195.0</td>
-      <td>119.0</td>
-      <td>221.0</td>
-      <td>329.0</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>Kansas</td>
-      <td>530.0</td>
-      <td>148.0</td>
-      <td>44.0</td>
-      <td>23.0</td>
-      <td>111.0</td>
-      <td>74.0</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>Kentucky</td>
-      <td>497.0</td>
-      <td>138.0</td>
-      <td>22.0</td>
-      <td>35.0</td>
-      <td>75.0</td>
-      <td>48.0</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>Louisiana</td>
-      <td>607.0</td>
-      <td>157.0</td>
-      <td>68.0</td>
-      <td>48.0</td>
-      <td>90.0</td>
-      <td>74.0</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>Massachusetts</td>
-      <td>2879.0</td>
-      <td>706.0</td>
-      <td>372.0</td>
-      <td>177.0</td>
-      <td>474.0</td>
-      <td>597.0</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>Maryland</td>
-      <td>1295.0</td>
-      <td>439.0</td>
-      <td>141.0</td>
-      <td>118.0</td>
-      <td>205.0</td>
-      <td>225.0</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>Maine</td>
-      <td>56.0</td>
-      <td>15.0</td>
-      <td>11.0</td>
-      <td>1.0</td>
-      <td>9.0</td>
-      <td>11.0</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>Michigan</td>
-      <td>1906.0</td>
-      <td>385.0</td>
-      <td>206.0</td>
-      <td>118.0</td>
-      <td>345.0</td>
-      <td>394.0</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>Minnesota</td>
-      <td>1374.0</td>
-      <td>397.0</td>
-      <td>66.0</td>
-      <td>53.0</td>
-      <td>362.0</td>
-      <td>128.0</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>Missouri</td>
-      <td>1022.0</td>
-      <td>259.0</td>
-      <td>108.0</td>
-      <td>55.0</td>
-      <td>152.0</td>
-      <td>171.0</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>Mississippi</td>
-      <td>460.0</td>
-      <td>107.0</td>
-      <td>48.0</td>
-      <td>20.0</td>
-      <td>76.0</td>
-      <td>51.0</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>Montana</td>
-      <td>119.0</td>
-      <td>36.0</td>
-      <td>15.0</td>
-      <td>11.0</td>
-      <td>14.0</td>
-      <td>9.0</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>North Carolina</td>
-      <td>1833.0</td>
-      <td>545.0</td>
-      <td>194.0</td>
-      <td>155.0</td>
-      <td>247.0</td>
-      <td>316.0</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>North Dakota</td>
-      <td>181.0</td>
-      <td>46.0</td>
-      <td>10.0</td>
-      <td>8.0</td>
-      <td>32.0</td>
-      <td>30.0</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>Nebraska</td>
-      <td>363.0</td>
-      <td>143.0</td>
-      <td>32.0</td>
-      <td>27.0</td>
-      <td>46.0</td>
-      <td>44.0</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>New Hampshire</td>
-      <td>158.0</td>
-      <td>60.0</td>
-      <td>32.0</td>
-      <td>10.0</td>
-      <td>17.0</td>
-      <td>17.0</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>New Jersey</td>
-      <td>1115.0</td>
-      <td>209.0</td>
-      <td>145.0</td>
-      <td>100.0</td>
-      <td>179.0</td>
-      <td>194.0</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>New Mexico</td>
-      <td>299.0</td>
-      <td>45.0</td>
-      <td>44.0</td>
-      <td>21.0</td>
-      <td>43.0</td>
-      <td>74.0</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>Nevada</td>
-      <td>200.0</td>
-      <td>21.0</td>
-      <td>20.0</td>
-      <td>11.0</td>
-      <td>44.0</td>
-      <td>34.0</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>New York</td>
-      <td>4064.0</td>
-      <td>859.0</td>
-      <td>411.0</td>
-      <td>302.0</td>
-      <td>835.0</td>
-      <td>567.0</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>Ohio</td>
-      <td>2028.0</td>
-      <td>440.0</td>
-      <td>260.0</td>
-      <td>113.0</td>
-      <td>283.0</td>
-      <td>410.0</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>Oklahoma</td>
-      <td>524.0</td>
-      <td>137.0</td>
-      <td>46.0</td>
-      <td>25.0</td>
-      <td>73.0</td>
-      <td>70.0</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>Oregon</td>
-      <td>572.0</td>
-      <td>183.0</td>
-      <td>95.0</td>
-      <td>52.0</td>
-      <td>80.0</td>
-      <td>71.0</td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td>Pennsylvania</td>
-      <td>2628.0</td>
-      <td>589.0</td>
-      <td>248.0</td>
-      <td>206.0</td>
-      <td>356.0</td>
-      <td>545.0</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>Puerto Rico</td>
-      <td>84.0</td>
-      <td>8.0</td>
-      <td>4.0</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>4.0</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>Rhode Island</td>
-      <td>322.0</td>
-      <td>67.0</td>
-      <td>47.0</td>
-      <td>37.0</td>
-      <td>58.0</td>
-      <td>39.0</td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td>South Carolina</td>
-      <td>506.0</td>
-      <td>100.0</td>
-      <td>59.0</td>
-      <td>32.0</td>
-      <td>65.0</td>
-      <td>141.0</td>
-    </tr>
-    <tr>
-      <th>42</th>
-      <td>South Dakota</td>
-      <td>110.0</td>
-      <td>37.0</td>
-      <td>12.0</td>
-      <td>10.0</td>
-      <td>19.0</td>
-      <td>21.0</td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td>Tennessee</td>
-      <td>1032.0</td>
-      <td>270.0</td>
-      <td>87.0</td>
-      <td>52.0</td>
-      <td>153.0</td>
-      <td>185.0</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>Texas</td>
-      <td>4068.0</td>
-      <td>905.0</td>
-      <td>424.0</td>
-      <td>296.0</td>
-      <td>553.0</td>
-      <td>880.0</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>Utah</td>
-      <td>508.0</td>
-      <td>116.0</td>
-      <td>54.0</td>
-      <td>49.0</td>
-      <td>82.0</td>
-      <td>99.0</td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td>Virginia</td>
-      <td>1513.0</td>
-      <td>265.0</td>
-      <td>145.0</td>
-      <td>103.0</td>
-      <td>277.0</td>
-      <td>291.0</td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td>Vermont</td>
-      <td>61.0</td>
-      <td>25.0</td>
-      <td>6.0</td>
-      <td>4.0</td>
-      <td>7.0</td>
-      <td>7.0</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>Washington</td>
-      <td>914.0</td>
-      <td>256.0</td>
-      <td>110.0</td>
-      <td>68.0</td>
-      <td>116.0</td>
-      <td>171.0</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>Wisconsin</td>
-      <td>1130.0</td>
-      <td>311.0</td>
-      <td>121.0</td>
-      <td>75.0</td>
-      <td>138.0</td>
-      <td>176.0</td>
-    </tr>
-    <tr>
-      <th>50</th>
-      <td>West Virginia</td>
-      <td>183.0</td>
-      <td>52.0</td>
-      <td>17.0</td>
-      <td>11.0</td>
-      <td>31.0</td>
-      <td>32.0</td>
-    </tr>
-    <tr>
-      <th>51</th>
-      <td>Wyoming</td>
-      <td>101.0</td>
-      <td>28.0</td>
-      <td>18.0</td>
-      <td>5.0</td>
-      <td>18.0</td>
-      <td>12.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
 </p>
     </details>
 </div>
@@ -3683,199 +340,18 @@ Name: Unnamed: 0, Length: 482, dtype: object&gt;</pre>
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_exports</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv&#39;</span><span class="p">)</span>
 
 <span class="n">df_codes</span> <span class="o">=</span> <span class="n">df_final</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_exports</span><span class="p">,</span> <span class="n">left_on</span> <span class="o">=</span> <span class="s1">&#39;State&#39;</span><span class="p">,</span> <span class="n">right_on</span> <span class="o">=</span> <span class="s1">&#39;state&#39;</span><span class="p">,</span> <span class="n">how</span> <span class="o">=</span> <span class="s1">&#39;left&#39;</span><span class="p">)</span>
-<span class="n">df_codes</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
-        <p>
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>State</th>
-      <th>All Fields</th>
-      <th>Life Sciences</th>
-      <th>Physical Sciences and Earth Sciences</th>
-      <th>Mathematics and Computer Sciences</th>
-      <th>Psychology and Social Sciences</th>
-      <th>Engineering</th>
-      <th>code</th>
-      <th>state</th>
-      <th>category</th>
-      <th>...</th>
-      <th>dairy</th>
-      <th>fruits fresh</th>
-      <th>fruits proc</th>
-      <th>total fruits</th>
-      <th>veggies fresh</th>
-      <th>veggies proc</th>
-      <th>total veggies</th>
-      <th>corn</th>
-      <th>wheat</th>
-      <th>cotton</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Alaska</td>
-      <td>52.0</td>
-      <td>10.0</td>
-      <td>20.0</td>
-      <td>0.0</td>
-      <td>17.0</td>
-      <td>3.0</td>
-      <td>AK</td>
-      <td>Alaska</td>
-      <td>state</td>
-      <td>...</td>
-      <td>0.19</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.00</td>
-      <td>0.6</td>
-      <td>1.0</td>
-      <td>1.56</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Alabama</td>
-      <td>707.0</td>
-      <td>188.0</td>
-      <td>59.0</td>
-      <td>48.0</td>
-      <td>89.0</td>
-      <td>131.0</td>
-      <td>AL</td>
-      <td>Alabama</td>
-      <td>state</td>
-      <td>...</td>
-      <td>4.06</td>
-      <td>8.0</td>
-      <td>17.1</td>
-      <td>25.11</td>
-      <td>5.5</td>
-      <td>8.9</td>
-      <td>14.33</td>
-      <td>34.9</td>
-      <td>70.0</td>
-      <td>317.61</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Arkansas</td>
-      <td>202.0</td>
-      <td>75.0</td>
-      <td>17.0</td>
-      <td>10.0</td>
-      <td>19.0</td>
-      <td>33.0</td>
-      <td>AR</td>
-      <td>Arkansas</td>
-      <td>state</td>
-      <td>...</td>
-      <td>3.53</td>
-      <td>2.2</td>
-      <td>4.7</td>
-      <td>6.88</td>
-      <td>4.4</td>
-      <td>7.1</td>
-      <td>11.45</td>
-      <td>69.5</td>
-      <td>114.5</td>
-      <td>665.44</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Arizona</td>
-      <td>801.0</td>
-      <td>133.0</td>
-      <td>110.0</td>
-      <td>51.0</td>
-      <td>156.0</td>
-      <td>141.0</td>
-      <td>AZ</td>
-      <td>Arizona</td>
-      <td>state</td>
-      <td>...</td>
-      <td>105.48</td>
-      <td>19.3</td>
-      <td>41.0</td>
-      <td>60.27</td>
-      <td>147.5</td>
-      <td>239.4</td>
-      <td>386.91</td>
-      <td>7.3</td>
-      <td>48.7</td>
-      <td>423.95</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>California</td>
-      <td>6105.0</td>
-      <td>1300.0</td>
-      <td>841.0</td>
-      <td>495.0</td>
-      <td>1132.0</td>
-      <td>1151.0</td>
-      <td>CA</td>
-      <td>California</td>
-      <td>state</td>
-      <td>...</td>
-      <td>929.95</td>
-      <td>2791.8</td>
-      <td>5944.6</td>
-      <td>8736.40</td>
-      <td>803.2</td>
-      <td>1303.5</td>
-      <td>2106.79</td>
-      <td>34.6</td>
-      <td>249.3</td>
-      <td>1064.95</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 24 columns</p>
-</div>
-</div>
-
-</div>
-
 </div>
 </div>
 </p>
@@ -3886,7 +362,9 @@ Name: Unnamed: 0, Length: 482, dtype: object&gt;</pre>
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
@@ -3898,9 +376,34 @@ Name: Unnamed: 0, Length: 482, dtype: object&gt;</pre>
     </div>
 </div>
 </div>
+</p>
+    </details>
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="A-snippet-of-my-final-dataset-can-be-found-below-to-see-what-it-looks-like-after-it's-cleaned:">A snippet of my final dataset can be found below to see what it looks like after it's cleaned:<a class="anchor-link" href="#A-snippet-of-my-final-dataset-can-be-found-below-to-see-what-it-looks-like-after-it's-cleaned:"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
 <details class="description">
-      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
-        <p>
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_codes</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -3992,6 +495,116 @@ Name: Unnamed: 0, Length: 482, dtype: object&gt;</pre>
       <td>1151.0</td>
       <td>CA</td>
     </tr>
+    <tr>
+      <th>5</th>
+      <td>Colorado</td>
+      <td>1005.0</td>
+      <td>212.0</td>
+      <td>155.0</td>
+      <td>67.0</td>
+      <td>128.0</td>
+      <td>206.0</td>
+      <td>CO</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Connecticut</td>
+      <td>748.0</td>
+      <td>196.0</td>
+      <td>104.0</td>
+      <td>60.0</td>
+      <td>129.0</td>
+      <td>97.0</td>
+      <td>CT</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>District of Columbia</td>
+      <td>623.0</td>
+      <td>55.0</td>
+      <td>37.0</td>
+      <td>24.0</td>
+      <td>207.0</td>
+      <td>78.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Delaware</td>
+      <td>238.0</td>
+      <td>59.0</td>
+      <td>24.0</td>
+      <td>19.0</td>
+      <td>45.0</td>
+      <td>69.0</td>
+      <td>DE</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Florida</td>
+      <td>2336.0</td>
+      <td>490.0</td>
+      <td>259.0</td>
+      <td>145.0</td>
+      <td>409.0</td>
+      <td>419.0</td>
+      <td>FL</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Georgia</td>
+      <td>1492.0</td>
+      <td>357.0</td>
+      <td>129.0</td>
+      <td>99.0</td>
+      <td>216.0</td>
+      <td>360.0</td>
+      <td>GA</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Hawaii</td>
+      <td>189.0</td>
+      <td>44.0</td>
+      <td>29.0</td>
+      <td>4.0</td>
+      <td>61.0</td>
+      <td>11.0</td>
+      <td>HI</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Iowa</td>
+      <td>715.0</td>
+      <td>150.0</td>
+      <td>79.0</td>
+      <td>72.0</td>
+      <td>82.0</td>
+      <td>152.0</td>
+      <td>IA</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Idaho</td>
+      <td>103.0</td>
+      <td>32.0</td>
+      <td>14.0</td>
+      <td>5.0</td>
+      <td>15.0</td>
+      <td>16.0</td>
+      <td>ID</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Illinois</td>
+      <td>2534.0</td>
+      <td>478.0</td>
+      <td>267.0</td>
+      <td>193.0</td>
+      <td>445.0</td>
+      <td>435.0</td>
+      <td>IL</td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -4001,21 +614,22 @@ Name: Unnamed: 0, Length: 482, dtype: object&gt;</pre>
 
 </div>
 </div>
-</p>
-    </details>
+
 </div>
     
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Below-are-the-plots-used-the-in-dashboard-and-the-code-that-accompanies-it.--Using-a-choropleth-map,-we-can-cleanly-see-how-the-popularity-of-each-field-varies-from-state-to-state.-The-total-number-of-schools-is-represented-by-the-color-gradient,-and-you-can-filter-the-fields-to-see-which-fields-are-more-popular-within-each-state.-Additionally-I-added-a-bar-chart-that-shows-each-fields-popularity-in-each-stat-as-another-means-of-comparison.">Below are the plots used the in dashboard and the code that accompanies it.  Using a choropleth map, we can cleanly see how the popularity of each field varies from state to state. The total number of schools is represented by the color gradient, and you can filter the fields to see which fields are more popular within each state. Additionally I added a bar chart that shows each fields popularity in each stat as another means of comparison.<a class="anchor-link" href="#Below-are-the-plots-used-the-in-dashboard-and-the-code-that-accompanies-it.--Using-a-choropleth-map,-we-can-cleanly-see-how-the-popularity-of-each-field-varies-from-state-to-state.-The-total-number-of-schools-is-represented-by-the-color-gradient,-and-you-can-filter-the-fields-to-see-which-fields-are-more-popular-within-each-state.-Additionally-I-added-a-bar-chart-that-shows-each-fields-popularity-in-each-stat-as-another-means-of-comparison."> </a></h3><h3 id="From-the-dashboard-we-can-see-that-California-gave-out-the-most-doctorate-degrees-in-2017,-followed-by-Texas-and-New-York.-Additionally-LIfe-Sciences-is-the-hottest-field,-while-Engineering-and-Psychology-and-Social-Sciences-are-a-close-second-and-third.">From the dashboard we can see that California gave out the most doctorate degrees in 2017, followed by Texas and New York. Additionally LIfe Sciences is the hottest field, while Engineering and Psychology and Social Sciences are a close second and third.<a class="anchor-link" href="#From-the-dashboard-we-can-see-that-California-gave-out-the-most-doctorate-degrees-in-2017,-followed-by-Texas-and-New-York.-Additionally-LIfe-Sciences-is-the-hottest-field,-while-Engineering-and-Psychology-and-Social-Sciences-are-a-close-second-and-third."> </a></h3>
+<h3 id="Below-I've-added-the-code-that-I-used-to-create-my-dashboard-which-can-be-found-here.--Using-a-choropleth-map,-we-can-cleanly-see-how-the-popularity-of-each-field-varies-from-state-to-state.-The-total-number-of-schools-is-represented-by-the-color-gradient,-and-you-can-filter-the-fields-to-see-which-fields-are-more-popular-within-each-state.-Additionally-I-added-a-bar-chart-that-shows-each-fields-popularity-in-each-stat-as-another-means-of-comparison.">Below I've added the code that I used to create my dashboard which can be found <a href="https://share.streamlit.io/dapoade/doctorate-dashboards/main/DoctoratesDashboard.py">here</a>.  Using a choropleth map, we can cleanly see how the popularity of each field varies from state to state. The total number of schools is represented by the color gradient, and you can filter the fields to see which fields are more popular within each state. Additionally I added a bar chart that shows each fields popularity in each stat as another means of comparison.<a class="anchor-link" href="#Below-I've-added-the-code-that-I-used-to-create-my-dashboard-which-can-be-found-here.--Using-a-choropleth-map,-we-can-cleanly-see-how-the-popularity-of-each-field-varies-from-state-to-state.-The-total-number-of-schools-is-represented-by-the-color-gradient,-and-you-can-filter-the-fields-to-see-which-fields-are-more-popular-within-each-state.-Additionally-I-added-a-bar-chart-that-shows-each-fields-popularity-in-each-stat-as-another-means-of-comparison."> </a></h3><h3 id="From-the-dashboard-we-can-see-that-California-gave-out-the-most-doctorate-degrees-in-2017,-followed-by-Texas-and-New-York.-Additionally-LIfe-Sciences-is-the-hottest-field,-while-Engineering-and-Psychology-and-Social-Sciences-are-a-close-second-and-third.">From the dashboard we can see that California gave out the most doctorate degrees in 2017, followed by Texas and New York. Additionally LIfe Sciences is the hottest field, while Engineering and Psychology and Social Sciences are a close second and third.<a class="anchor-link" href="#From-the-dashboard-we-can-see-that-California-gave-out-the-most-doctorate-degrees-in-2017,-followed-by-Texas-and-New-York.-Additionally-LIfe-Sciences-is-the-hottest-field,-while-Engineering-and-Psychology-and-Social-Sciences-are-a-close-second-and-third."> </a></h3>
 </div>
 </div>
 </div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
@@ -4053,7 +667,8 @@ Name: Unnamed: 0, Length: 482, dtype: object&gt;</pre>
     </div>
 </div>
 </div>
-
+</p>
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -4099,7 +714,9 @@ if (outputEl) {{
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
@@ -4115,7 +732,8 @@ if (outputEl) {{
     </div>
 </div>
 </div>
-
+</p>
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -4123,9 +741,9 @@ if (outputEl) {{
 
 
 <div class="output_html rendered_html output_subarea ">
-<div>                            <div id="9202dc5a-6928-4b8d-a6c1-27178118d77a" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("9202dc5a-6928-4b8d-a6c1-27178118d77a")) {                    Plotly.newPlot(                        "9202dc5a-6928-4b8d-a6c1-27178118d77a",                        [{"marker":{"color":"indianred"},"type":"bar","x":["Alaska","Alabama","Arkansas","Arizona","California","Colorado","Connecticut","District of Columbia","Delaware","Florida","Georgia","Hawaii","Iowa","Idaho","Illinois","Indiana","Kansas","Kentucky","Louisiana","Massachusetts","Maryland","Maine","Michigan","Minnesota","Missouri","Mississippi","Montana","North Carolina","North Dakota","Nebraska","New Hampshire","New Jersey","New Mexico","Nevada","New York","Ohio","Oklahoma","Oregon","Pennsylvania","Puerto Rico","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Virginia","Vermont","Washington","Wisconsin","West Virginia","Wyoming"],"y":[52.0,707.0,202.0,801.0,6105.0,1005.0,748.0,623.0,238.0,2336.0,1492.0,189.0,715.0,103.0,2534.0,1572.0,530.0,497.0,607.0,2879.0,1295.0,56.0,1906.0,1374.0,1022.0,460.0,119.0,1833.0,181.0,363.0,158.0,1115.0,299.0,200.0,4064.0,2028.0,524.0,572.0,2628.0,84.0,322.0,506.0,110.0,1032.0,4068.0,508.0,1513.0,61.0,914.0,1130.0,183.0,101.0]}],                        {"template":{"data":{"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"xaxis":{"tickangle":-90}},                        {"responsive": true}                    ).then(function(){
+<div>                            <div id="13cb116f-071b-4d79-9fbc-9951535f0bb7" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("13cb116f-071b-4d79-9fbc-9951535f0bb7")) {                    Plotly.newPlot(                        "13cb116f-071b-4d79-9fbc-9951535f0bb7",                        [{"marker":{"color":"indianred"},"type":"bar","x":["Alaska","Alabama","Arkansas","Arizona","California","Colorado","Connecticut","District of Columbia","Delaware","Florida","Georgia","Hawaii","Iowa","Idaho","Illinois","Indiana","Kansas","Kentucky","Louisiana","Massachusetts","Maryland","Maine","Michigan","Minnesota","Missouri","Mississippi","Montana","North Carolina","North Dakota","Nebraska","New Hampshire","New Jersey","New Mexico","Nevada","New York","Ohio","Oklahoma","Oregon","Pennsylvania","Puerto Rico","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Virginia","Vermont","Washington","Wisconsin","West Virginia","Wyoming"],"y":[52.0,707.0,202.0,801.0,6105.0,1005.0,748.0,623.0,238.0,2336.0,1492.0,189.0,715.0,103.0,2534.0,1572.0,530.0,497.0,607.0,2879.0,1295.0,56.0,1906.0,1374.0,1022.0,460.0,119.0,1833.0,181.0,363.0,158.0,1115.0,299.0,200.0,4064.0,2028.0,524.0,572.0,2628.0,84.0,322.0,506.0,110.0,1032.0,4068.0,508.0,1513.0,61.0,914.0,1130.0,183.0,101.0]}],                        {"template":{"data":{"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"xaxis":{"tickangle":-90}},                        {"responsive": true}                    ).then(function(){
                             
-var gd = document.getElementById('9202dc5a-6928-4b8d-a6c1-27178118d77a');
+var gd = document.getElementById('13cb116f-071b-4d79-9fbc-9951535f0bb7');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
